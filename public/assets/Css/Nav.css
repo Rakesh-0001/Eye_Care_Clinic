@@ -1,0 +1,170 @@
+/* ----------- NAVBAR GLASS EFFECT, BORDER, RADIUS ----------- */
+.eyecare-navbar-wrap {
+    position: relative;
+    z-index: 30;
+    margin-top: 10px;
+    background: transparent;
+    transition: box-shadow 0.2s;
+    padding: 20px;
+  }
+  
+  .eyecare-navbar {
+    width: 100%;
+    max-width: 1273px;
+    min-height: 47px;
+    margin: 0 auto;
+    border-radius: 40px;
+    border: 1px solid;
+    border-image-source: linear-gradient(90.09deg, rgba(0, 220, 154, 0.36) -0.17%, rgba(74, 62, 193, 0.36) 80.53%);
+    background: linear-gradient(90deg,  rgba(0, 0, 0, 0.18) 0%,  rgba(0, 0, 0, 0.18) 100%);
+    box-shadow: 0 4px 32px 0 rgba(19, 28, 101, 0.10);
+    backdrop-filter: blur(7px);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    align-items: center;
+    transition: background 0.2s, box-shadow 0.2s;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    opacity: 1;
+  }
+  
+  /* ----------- LOGO AND BRAND TEXT ----------- */
+  .eyecare-brand {
+    min-width: 160px;
+    font-size: 1.2rem;
+    padding-right: 20px;
+  }
+  .eyecare-brand .brand-text {
+    color: #fff;
+    font-size: 1.20rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .eyecare-brand .brand-green {
+    color: #18ff72;
+    font-weight: 700;
+    font-size: 1.18rem;
+  }
+  
+  /* ----------- NAV LINKS AND SEPARATORS ----------- */
+  .eyecare-nav-link.active,
+  .eyecare-nav-link:hover {
+    color: rgb(0,214,150) !important;
+    text-shadow: 0 1px 2px #2632661c;
+  }
+  .eyecare-nav-separator {
+    color: #FFFFFF47;
+    font-weight: 400;
+    font-size: .8rem;
+    user-select: none;
+  }
+  
+  /* ----------- BOOK NOW BUTTON ----------- */
+  .btn-book-now {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 28px 10px 28px;
+    min-width: 120px;
+    background:  #00A876EB !important;
+    transition: background 0.2s;
+    position: relative;
+    left: 18px;
+    top: 1px;
+  }
+  .btn-book-now:hover {
+    background: #00a876a2 !important;
+    color: #fff;
+  }
+  
+  /* ----------- MOBILE NAV TOGGLER ----------- */
+  .eyecare-nav-toggle,
+  .eyecare-nav-toggle-label {
+    display: none;
+  }
+  @media (max-width: 991.98px) {
+    .eyecare-navbar {
+      border-radius: 20px;
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+      min-height: 46px;
+    }
+    .eyecare-nav-links {
+      display: none !important;
+    }
+    .eyecare-nav-toggle,
+    .eyecare-nav-toggle-label {
+      display: block;
+      position: absolute;
+      right: 90px;
+      top: 17px;
+      width: 32px;
+      height: 32px;
+      z-index: 31;
+      background: none;
+      border: none;
+    }
+    .eyecare-nav-toggle-label span {
+      display: block;
+      width: 24px;
+      height: 3px;
+      margin: 5px 0;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.25s;
+    }
+    .eyecare-mobile-menu {
+      display: none;
+      position: absolute;
+      background: rgba(29, 33, 89, 0.98);
+      border-radius: 18px;
+      top: 60px;
+      right: 10px;
+      min-width: 190px;
+      z-index: 32;
+      box-shadow: 0 6px 24px 0 rgba(21,29,91,0.08);
+      padding: 18px 0 10px 0;
+      transition: opacity 0.18s;
+    }
+    .eyecare-nav-toggle:checked ~ .eyecare-mobile-menu {
+      display: block;
+    }
+    .eyecare-mobile-menu ul {
+      margin: 0;
+      padding: 0 10px;
+    }
+    .eyecare-mobile-menu .nav-link {
+      padding: 10px !important;
+      font-size: 1.07rem;
+      color: #fff !important;
+      border-radius: 7px;
+    }
+    .eyecare-mobile-menu .nav-link.active,
+    .eyecare-mobile-menu .nav-link:hover {
+      background: rgba(36, 255, 164, 0.18);
+      color: #18ff72 !important;
+    }
+  }
+  
+  /* ----------- FIXED NAV ON SCROLL ----------- */
+  .nav-fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 2px;
+    width: 97vw !important;
+    margin-top: 20px !important;
+    animation: navFadeIn 0.6s;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    background: #2E21D5;
+    background: radial-gradient(circle, rgba(46, 33, 213, 1) 45%, rgba(6, 12, 85, 1) 98%);
+    
+  }
+  @keyframes navFadeIn {
+    0% { opacity: 0; transform: translateY(-30px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+
+ 

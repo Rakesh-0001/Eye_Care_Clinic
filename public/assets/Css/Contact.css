@@ -1,0 +1,303 @@
+/* ----------- CONTACT PAGE HEADER ----------- */
+.contact-header {
+    padding-top: 56px;
+    background: transparent;
+  }
+  
+  .contact-title-custom {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .contact-heading-green {
+    color: #00D796;
+  }
+  .contact-heading-white {
+    color: #fff;
+  }
+  .contact-subtitle {
+    color: #c2c4ea;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  /* ----------- WHITE FLOATING CARD FOR MAIN CONTENT ----------- */
+  .contact-content-section {
+    background: #fff;
+    border-radius: 60px;
+    box-shadow: 0 10px 48px 0 rgba(19, 28, 101, 0.10);
+    margin-top: -36px;
+    margin-bottom: 48px;
+    min-height: 640px;
+    max-width: 99.8%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Contact info cards */
+  .contact-info-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  .contact-hospital-title {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2E2D79;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 6px;
+  }
+  .contact-hospital-address {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #323131;
+    margin-bottom: 3px;
+  }
+  .contact-hospital-label {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 181%;
+    color: #323131;
+    margin-bottom: 0;
+    display: flex;
+    gap: 4px;
+  }
+  .contact-hospital-email {
+    font-weight: 400;
+    color: #323131;
+  }
+  .contact-hospital-hours {
+    font-weight: 400;
+    color: #323131;
+  }
+  .contact-hospital-phone-label {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 20px;
+    color: #2E2D79;
+    font-weight: 700;
+    margin-bottom: 3px;
+    line-height: 181%;
+  }
+  .contact-hospital-phone-value {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    color: #323131;
+    font-size: 14px;
+    line-height: 181%;
+  }
+  .contact-hospital-map-link {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 181%;
+    color: #2D17FF !important;
+    text-decoration: underline;
+    margin-top: 4px;
+    transition: color 0.2s;
+  }
+  .contact-hospital-map-link:hover {
+    color: #1509a1 !important;
+  }
+  .contact-big-title {
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 65px;
+    line-height: 101%;
+    letter-spacing: -6%;
+    color: #2E2D79;
+  }
+  
+  /* Location menu styles */
+  .contact-location-menu {
+    min-width: 170px;
+    padding-left: 8px;
+  }
+  .contact-location-group-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2E2D79;
+    background: none;
+    border: none;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.18s;
+    padding: 0;
+  }
+  .contact-location-group-btn.open,
+  .contact-location-group-btn:hover {
+    color: #211e63;
+  }
+  .contact-location-group-arrow {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: auto;
+    color: #2E2D79;
+  }
+  .arrow_ {
+    position: relative;
+    right: 170px;
+  }
+  .contact-location-list {
+    list-style: none;
+    margin: 0 0 0 4px;
+    padding: 0;
+  }
+  .contact-location-list-btn {
+    display: block;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #323131;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 3px 0 3px 6px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.16s, color 0.16s;
+  }
+  .contact-location-list-btn.active,
+  .contact-location-list-btn:hover {
+    font-weight: 700;
+    color: #2E2D79;
+    text-decoration: underline;
+  }
+  
+  /* Form styles */
+  .contact-map-form-section {
+    /* Optional: add some spacing if needed */
+  }
+  .contact-map-desc {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #323131;
+    margin-bottom: 18px;
+  }
+  .contact-map-outer {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 28.6px 0px #00000040;
+    background: #fff;
+  }
+  .contact-form-card-v2 {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 28.6px 0px #00000040;
+    padding: 38px 32px 28px 32px;
+    min-width: 330px;
+    width: 100%;
+    max-width: 420px;
+  }
+  .form-title {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2E2D79;
+    margin-bottom: 4px;
+  }
+  .form-subtitle {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 10px;
+    color: #323131;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+  .form-label {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    color: #323131;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .form-control, .form-select {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #c2c4ea;
+    padding: 8px 12px;
+  }
+  .form-check-label {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: #323131;
+    font-weight: 400;
+  }
+  .contact-send-btn {
+    background: #36c293;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.18s;
+  }
+  .contact-send-btn:hover {
+    background: #29a97e;
+    color: #fff;
+  }
+  
+  @media (max-width: 991.98px) {
+    .contact-content-section {
+      border-radius: 22px;
+      margin-top: -20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .contact-title-custom {
+      font-size: 32px;
+    }
+    .contact-form-card-v2 {
+      min-width: 0;
+      max-width: 100%;
+      padding: 28px 12px 18px 12px;
+      box-shadow: 0px 4px 28.6px 0px #00000040;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .contact-content-section {
+      border-radius: 13px;
+      margin-top: -10px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .contact-title-custom {
+      font-size: 34px;
+    }
+    .contact-map-form-section .row {
+      flex-direction: column;
+    }
+    .contact-form-card-v2 {
+      margin-top: 16px;
+      padding: 18px 6px 12px 6px;
+      box-shadow: 0px 4px 28.6px 0px #00000040;
+    }
+  }
+  
+
+  
