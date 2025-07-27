@@ -1,6 +1,6 @@
 import React from "react";
 import { blogData } from "../../../Datas/blogData.js"; // Adjust the path as needed
-import BlogDetails from "@/components/BlogDetails";
+import BlogDetails from "../../../components/BlogDetails.js"; // Adjust the path as needed
 
 export default function BlogPage({ params }) {
   const blogId = parseInt(params.blogId);
