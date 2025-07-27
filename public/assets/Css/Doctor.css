@@ -99,12 +99,13 @@
   to { opacity: 1; transform: translateX(0);}
 }
 
-.doctor-name {
+.doctors-name {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
   color: #000B41;
   /* line-height: 1.3; */
+  text-align: start;
 }
 
 .doctor-qual {
@@ -200,7 +201,7 @@
 
 
 
-.doctor-img {
+.Doctors-img {
   width: 270px;
   height: 380px;
   object-fit: cover;
@@ -278,7 +279,7 @@
   z-index: 1000;
   flex-shrink: 0;
 }
-.doctor-img {
+.Doctors-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -300,12 +301,14 @@
   min-height: 380px;
   position: relative;
 }
-.doctor-name {
+.doctors-name {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #000B41;
   margin-bottom: 2px;
+  text-align: start;
+
 }
 .doctor-qual {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -357,7 +360,7 @@
   right: 22px;
   bottom: 22px;
 }
-.doctor-card:not(.doctor-card-expanded) .doctor-img {
+.doctor-card:not(.doctor-card-expanded) .Doctors-img {
   border-radius: 22px;
 }
 .arrow-box{
@@ -393,7 +396,7 @@ background-color: #2E2D79;
     height: 320px;
   }
   .doctor-card-image,
-  .doctor-img {
+  .Doctors-img {
     border-radius: 24px 0 0 24px;
   }
   .doctor-details-panel {
@@ -419,7 +422,7 @@ background-color: #2E2D79;
     height: 220px;
   }
   .doctor-card-image,
-  .doctor-img {
+  .Doctors-img{
     border-radius: 16px 0 0 16px;
   }
   .doctor-details-panel {
@@ -643,4 +646,234 @@ background-color: #2E2D79;
   height: 25px;
   object-fit: contain;
   filter: brightness(0) invert(1); /* makes arrow white */
+}
+
+
+/* Tablet: Stack cards with reduced width and height */
+@media (max-width: 1024px) {
+  .doctor-list-row {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+  .doctor-card-col,
+  .doctor-card-col.expanded {
+    min-width: 220px;
+    max-width: 220px;
+    flex: 0 0 220px;
+  }
+  .doctor-card,
+  .doctor-card-row,
+  .doctor-card-image,
+  .Doctors-img,
+  .doctor-details-split {
+    min-height: 220px;
+    height: 220px;
+  }
+  .Doctors-img {
+    border-radius: 18px;
+  }
+  .doctor-details-split {
+    padding: 14px 10px 14px 18px;
+    border-radius: 0 18px 18px 0;
+  }
+  .doctors-name {
+    font-size: 16px;
+  }
+  .doctor-qual,
+  .doctor-designation {
+    font-size: 13px;
+  }
+}
+
+/* For tablets and small desktops (700px–1050px) */
+@media (min-width: 700px) and (max-width: 1050px) {
+  .doctor-list-row {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .doctor-card-col,
+  .doctor-card-col.expanded {
+    min-width: 90%;
+    max-width: 90%;
+    flex: 1 1 90%;
+    margin: 0 auto;
+  }
+  .doctor-card,
+  .doctor-card-row {
+    flex-direction: column !important;
+    align-items: stretch;
+    min-height: 450px;
+    height: auto;
+    width: 100%;
+  }
+  .doctor-card-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 22px 22px 0 0;
+    margin-bottom: 0;
+  }
+  .Doctors-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px 22px 0 0;
+  }
+  .doctor-details-split {
+    width: 100%;
+    min-height: unset;
+    height: auto;
+    margin-left: 0;
+    border-radius: 0 0 22px 22px;
+    padding: 20px 20px 16px 20px;
+    background: linear-gradient(180deg, rgba(213,255,237,0.79) 0%, rgba(83,190,144,0.79) 100%);
+  }
+  .Book-appointment {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 0;
+    margin-top: 12px;
+    border-radius: 6px;
+  }
+}
+
+/* Mobile: Cards stack vertically, image above details */
+@media (max-width: 767px) {
+
+  .location-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.18;
+    letter-spacing: -3px;
+    color: #000B41;
+  }
+
+  .doctor-list-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .doctor-card-col,
+  .doctor-card-col.expanded {
+    min-width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .doctor-card,
+  .doctor-card-row {
+    flex-direction: column !important;
+    align-items: stretch;
+    min-height: unset;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .doctor-card-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 0;
+  }
+  .Doctors-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  .doctor-details-split {
+    width: 100%;
+    min-height: unset;
+    height: auto;
+    margin-left: 0;
+    border-radius: 0 0 16px 16px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(180deg, rgba(213,255,237,0.79) 0%, rgba(83,190,144,0.79) 100%);
+  }
+  .doctors-name {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .doctor-qual,
+  .doctor-designation {
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+  .doctor-more {
+    font-size: 11px;
+  }
+  .Book-appointment {
+    width: 100%;
+    min-width: unset;
+    font-size: 13px;
+    padding: 6px 0;
+    margin-top: 10px;
+  }
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .arrow-box {
+    top: 0;
+    left: 0;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+
+@media (max-width: 575.98px) { 
+
+  .location-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: -3px;
+    color: #000B41;
+  }
+
+  .job-search-btn-mbile {
+    background: #000B41;
+    color: #fff;
+    border-radius: 8px;
+    height: 42px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    transition: background 0.2s;
+    padding: 10px;
+  }
+
+  .job-search-location-icon{
+    font-size: 15px;
+    position: relative;
+    right: 5px;
+  }
+
+  .job-search-location-option{
+    position: relative;
+    right: 18px;
+  }
+
+  .search-container {
+    width: 600px;
+    min-height: 71px;
+    border-radius: 8px;
+    background: #53BE90;
+    gap: 5px;
+    padding: 19px 10px;
+    box-sizing: border-box;
+    backdrop-filter: blur(51.4px);
+    display: flex;
+    align-items: center;
+  }
+
+  .review-section-container {
+    padding: 0px;
+  }
+
 }

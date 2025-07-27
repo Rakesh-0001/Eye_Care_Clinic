@@ -92,6 +92,7 @@ export default function clinic() {
   return (
     <section className="blog-section ">
       <div className="container ">
+        {/* Header Section */}
         <section className="contact-header ">
           <div className="container mt-3">
             <h1 className="contact-title-custom text-end mb-1">
@@ -99,14 +100,14 @@ export default function clinic() {
             </h1>
           </div>
         </section>
-        <div className="container container_ ">
-          <div className="contact-page-breadcrumb ms-3">
+        <div className=" container_ ">
+          <div className="contact-page-breadcrumb ms-0 ms-md-0">
             <span>• Clinic</span>
           </div>
         </div>
 
         {/* Search Bar */}
-        <div className="d-flex justify-content-center align-items-center mt-3 mb-4">
+        <div className="d-flex justify-content-center align-items-center mt-3 mb-2 mb-md-4">
           <div className="search-container d-flex align-items-center px-3 py-2">
             <div className="input-group job-search-input-wrapper d-flex align-items-center flex-grow-1 ">
               <span
@@ -149,16 +150,24 @@ export default function clinic() {
               </select>
             </div>
             <button
-              className="job-search-btn d-flex justify-content-between align-items-center"
+              className=" job-search-btn d-flex justify-content-between align-items-center d-none d-md-block"
               type="button"
               onClick={handleSearch}
             >
               <i className="bi bi-search me-3"></i>
               Search
             </button>
+
+            <button
+              className=" job-search-btn-mbile d-flex justify-content-between align-items-center d-block d-md-none"
+              type="button"
+              onClick={handleSearch}
+            >
+              <i className="bi bi-search me-0 me-md-3"></i>
+            </button>
           </div>
         </div>
-        <section className="clinic-cards-section mt-5 mb-5 py-4">
+        <section className="clinic-cards-section mt-1 mt-md-5 mb-0 mb-md-5 py-4">
           <div className="container">
             <div className="row justify-content-center">
               {filteredHospitals.map((hospital, idx) => (
@@ -219,10 +228,10 @@ export default function clinic() {
             </div>
           </div>
         </section>
-        <section className="clinic_space mt-5 mb-5 py-4"></section>
+        <section className="clinic_space mt-5 mb-0 mb-md-5 py-4 d-none d-md-block"></section>
 
         <section className="blog-faq-section py-4">
-          <div className="container">
+          <div className="">
             <h2 className="blog-title mb-2">Blog</h2>
             <p className="blog-desc mb-4 mt-4">
               Our doctors provide expert{" "}

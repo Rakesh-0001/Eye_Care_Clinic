@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="row gy-4 align-items-start p-2 p-md-0 ">
           {/* Logo and description */}
-          <div className="col-12 col-md-3 mb-3 mb-md-0  text-md-start">
+          <div className="col-12 col-md-3  mb-3 mb-md-0  text-md-start">
             <div className="eyecare-footer-logo w-100  mb-2">
               <img src="/Logo.png" alt="Bejan Singh" width={130} height={30} />
             </div>

@@ -109,162 +109,169 @@ export default function Institution() {
   ];
 
   return (
-    <div className="institution-page">
-      <section className="contact-content-section">
-        <div className="scrollable-content">
-          <section className="contact-header">
-            <div className="container mt-3">
-              <h1 className="contact-title-custom text-end mb-1">
-                <span className="contact-heading-green">Institution</span>
-              </h1>
-            </div>
-          </section>
-          <div className="container py-5 institution-container">
-            <div className="contact-page-breadcrumb ms-3">• Institution</div>
-            <div className="vision-mission-row">
-              {/* Left Column */}
-              <div className="left-col">
-                <div className="vision-title">Our Vision & Mission</div>
-                <div className="images-stack">
-                  <div className="left-image-wrapper">
-                    <Image
-                      src="/assets/Images/Institution-left-img.jpg"
-                      alt="Institution left"
-                      width={505}
-                      height={210}
-                      className="left-image"
-                    />
-                    <Image
-                      src="/assets/Images/Institution-circle-img.png"
-                      alt="Circle text"
-                      width={180}
-                      height={180}
-                      className="circle-image"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* Right Column */}
-              <div className="right-col">
-                <div className="vision-text-top">
-                  To be a globally recognized center of excellence in education,
-                  research, and patient-centric care, dedicated to illuminating
-                  futures through advanced knowledge and compassionate practice.
-                </div>
-                <div className="right-image-wrapper">
+    <section className="contact-content-section ">
+      <section className="contact-header ">
+        <div className="container mt-3">
+          <h1 className="contact-title-custom text-end mb-1">
+            <span className="contact-heading-green"> Institution</span>{" "}
+          </h1>
+        </div>
+      </section>
+      <div className="container container_ py-0  py-md-0">
+        <div className="contact-page-breadcrumb ms-1 ms-md-3">
+          <span>• Institution</span>
+        </div>
+
+        <div className=" py-0 py-md-4 institution-container">
+          <div className="vision-mission-row">
+            {/* Left Column */}
+            <div className="left-col">
+              <div className="vision-title">Our Vision & Mission</div>
+              <div className="images-stack">
+                <div className="left-image-wrapper">
                   <Image
-                    src="/assets/Images/Institution-right-img.png"
-                    alt="Institution shape right"
+                    src="/assets/Images/Institution-left-img.jpg"
+                    alt="Institution left"
                     width={505}
-                    height={526}
-                    className="right-image"
+                    height={210}
+                    className="left-image"
+                  />
+                  <Image
+                    src="/assets/Images/Institution-circle-img.png"
+                    alt="Circle text"
+                    width={180}
+                    height={180}
+                    className="circle-image"
                   />
                 </div>
-                <div className="vision-text-bottom">
-                  To provide rigorous and in-depth training programs, that equip
-                  students with exceptional clinical skills, surgical
-                  proficiency, and a strong foundation in ophthalmic science, in
-                  adherence to the standards of The Tamil Nadu Dr. M.G.R.
-                  Medical University.
-                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="bejan-section">
-        <div className="container">
-          <h2 className="bejan-title">
-            Bejan Singh Institute of Ophthalmology
-          </h2>
-          <h3 className="bejan-subtitle">
-            Premier Eye Education in Nagercoil, Kanyakumari
-          </h3>
-          <p className="bejan-desc">
-            The Bejan Singh institute of ophthalmology was established in 2011
-            by Dr.S.M.Bejan Singh. It is known for its excellence in eye care
-            education in south TamilNadu
-          </p>
-          <p className="bejan-desc">
-            and is proudly affiliated with{" "}
-            <span className="bejan-affiliate">
-              The Tamil Nadu Dr. M.G.R. Medical University, Chennai.
-            </span>
-            <span className="bejan-affiliate-desc">
-              {" "}
-              This affiliation reflects our strong commitment to delivering
-              world-class ophthalmic training and research.
-            </span>
-          </p>
-        </div>
-      </section>
-
-      <section className="programs-section mt-3">
-        <div className="container programs-container">
-          <div className=" mb-5">
-            <h2 className="Academic-title w-50">Academic Programs Offered</h2>
-          </div>
-          <div className="row ">
-            {/* Left: Program List */}
-            <div className="col-lg-3 col-md-4 col-12 programs-list-col">
-              <div className="programs-list">
-                {programs.map((p, idx) => (
-                  <div
-                    key={p.title}
-                    className={
-                      "programs-list-item" + (selected === idx ? " active" : "")
-                    }
-                    onClick={() => setSelected(idx)}
-                  >
-                    <div>
-                      <span>{p.title}</span>{" "}
-                    </div>
-                    <div>
-                      <i className="bi bi-chevron-down ms-2"></i>{" "}
-                    </div>
-                  </div>
-                ))}
+            {/* Right Column */}
+            <div className="right-col">
+              <div className="vision-text-top">
+                To be a globally recognized center of excellence in education,
+                research, and patient-centric care, dedicated to illuminating
+                futures through advanced knowledge and compassionate practice.
               </div>
-            </div>
-            {/* Right: Program Content */}
-            <div className="col-lg-9 col-md-8 col-12 programs-content-col">
-              <div className="programs-content">
-                <h2 className="programs-content-title">
-                  {programs[selected].content.heading}
-                </h2>
-                {programs[selected].content.desc.map((t, i) => (
-                  <p className="programs-content-desc" key={i}>
-                    {t}
-                  </p>
-                ))}
-                <div className="programs-content-subtitle">Eligibility:</div>
-                <ul className="programs-content-list">
-                  {programs[selected].content.eligibility.map((t, i) => (
-                    <li key={i}>{t}</li>
-                  ))}
-                </ul>
-                <div className="programs-content-subtitle">Duration:</div>
-                <ul className="programs-content-list">
-                  {programs[selected].content.duration.map((t, i) => (
-                    <li key={i}>{t}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="programs-img-wrapper">
+              <div className="right-image-wrapper">
                 <Image
-                  src={programs[selected].content.image}
-                  alt="Program"
-                  width={180}
-                  height={544}
-                  className="programs-img"
+                  src="/assets/Images/Institution-right-img.png"
+                  alt="Institution shape right"
+                  width={505}
+                  height={526}
+                  className="right-image"
                 />
               </div>
+              <div className="vision-text-bottom">
+                To provide rigorous and in-depth training programs, that equip
+                students with exceptional clinical skills, surgical proficiency,
+                and a strong foundation in ophthalmic science, in adherence to
+                the standards of The Tamil Nadu Dr. M.G.R. Medical University.
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section className="Admission-section mt-1">
+     
+
+        <section className="bejan-section">
+          <div className="">
+            <h2 className="bejan-title">
+              Bejan Singh Institute of Ophthalmology
+            </h2>
+            <h3 className="bejan-subtitle">
+              Premier Eye Education in Nagercoil, Kanyakumari
+            </h3>
+            <p className="bejan-desc">
+              The Bejan Singh institute of ophthalmology was established in 2011
+              by Dr.S.M.Bejan Singh. It is known for its excellence in eye care
+              education in south TamilNadu
+            </p>
+            <p className="bejan-desc">
+              and is proudly affiliated with{" "}
+              <span className="bejan-affiliate">
+                The Tamil Nadu Dr. M.G.R. Medical University, Chennai.
+              </span>
+              <span className="bejan-affiliate-desc">
+                {" "}
+                This affiliation reflects our strong commitment to delivering
+                world-class ophthalmic training and research.
+              </span>
+            </p>
+          </div>
+        </section>
+
+        <section className="programs-section mt-3">
+          <div className=" programs-container">
+            <div className=" mb-2 mb-md-5">
+              <h2 className="Academic-title ">Academic Programs Offered</h2>
+            </div>
+            <div className="row mt-3 mt-md-5 p-1">
+              {/* Left: Program List */}
+              <div className="col-lg-3 col-md-3 col-12 programs-list-col">
+                <div className="programs-list ">
+                  {programs.map((p, idx) => (
+                    <div
+                      key={p.title}
+                      className={
+                        "programs-list-item" +
+                        (selected === idx ? " active" : "")
+                      }
+                      onClick={() => setSelected(idx)}
+                    >
+                      <div>
+                        <span>{p.title}</span>{" "}
+                      </div>
+                      <div>
+                        <i className="bi bi-chevron-down ms-2"></i>{" "}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {/* Right: Program Content */}
+              <div className="col-lg-9 col-md-9 col-12 programs-content-col">
+                <div className="programs-content mb-4 mb-md-0">
+                  <h2 className="programs-content-title">
+                    {programs[selected].content.heading}
+                  </h2>
+                  {programs[selected].content.desc.map((t, i) => (
+                    <p className="programs-content-desc" key={i}>
+                      {t}
+                    </p>
+                  ))}
+                  <div className="programs-content-subtitle">Eligibility:</div>
+                  <ul className="programs-content-list">
+                    {programs[selected].content.eligibility.map((t, i) => (
+                      <li key={i}>{t}</li>
+                    ))}
+                  </ul>
+                  <div className="programs-content-subtitle">Duration:</div>
+                  <ul className="programs-content-list">
+                    {programs[selected].content.duration.map((t, i) => (
+                      <li key={i}>{t}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="programs-img-wrapper">
+                  <Image
+                    src={programs[selected].content.image}
+                    alt="Program"
+                    width={180}
+                    height={544}
+                    className="programs-img"
+                  />
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+      </div>
+
+      
+
+      <section className="Admission-section mt-0 mt-md-1">
         <div className="container Admission-container">
           <div className=" mb-5">
             <h2 className="Academic-title w-50">
@@ -326,27 +333,27 @@ export default function Institution() {
             <div className="admission-metrics-outer">
               <div className="admission-metrics-inner">
                 <div className="admission-metrics-row">
-                  <div className="admission-metrics-item">
+                  <div className="admission-metrics-item  d-flex justify-content-start">
                     <div className="admission-metrics-value">167+</div>
-                    <div className="admission-metrics-label">Doctors</div>
+                    <div className="admission-metrics-label ms-4">Doctors</div>
                   </div>
                   <div className="admission-metrics-vert-divider" />
-                  <div className="admission-metrics-item">
+                  <div className="admission-metrics-item  d-flex justify-content-start ms-3 ms-md-0">
                     <div className="admission-metrics-value">7000+</div>
-                    <div className="admission-metrics-label">Patients</div>
+                    <div className="admission-metrics-label ms-4">Patients</div>
                   </div>
                 </div>
                 <div className="admission-metrics-row">
-                  <div className="admission-metrics-item">
+                  <div className="admission-metrics-item  d-flex justify-content-start">
                     <div className="admission-metrics-value">100+</div>
                     <div className="admission-metrics-label ms-4">
                       Cataract Suites
                     </div>
                   </div>
                   <div className="admission-metrics-vert-divider" />
-                  <div className="admission-metrics-item">
+                  <div className="admission-metrics-item  d-flex justify-content-start  ms-3 ms-md-0">
                     <div className="admission-metrics-value">200+</div>
-                    <div className="admission-metrics-label">Retina</div>
+                    <div className="admission-metrics-label ms-5">Retina</div>
                   </div>
                 </div>
               </div>
@@ -355,23 +362,24 @@ export default function Institution() {
         </div>
       </section>
 
-      <section className="academic-facilities-section">
+
+      <section className="container academic-facilities-section">
         <div className="container academic-facilities-container">
           <div className="row w-100">
-            <div className="col-lg-2 col-md-12 academic-facilities-title-col">
+            <div className="col-12 col-lg-2 col-md-12 academic-facilities-title-col">
               <div className="academic-facilities-title">
                 Academic Facilities
               </div>
             </div>
-            <div className="col-lg-10 col-md-12">
+            <div className="col-12 col-lg-10 col-md-12">
               <div className="row academic-facilities-list ms-5">
                 {facilities.map((item, idx) => (
                   <div
-                    className="col-lg-3 col-md-4 col-6 facility-item-col"
+                    className="col-lg-3 col-md-4 col-12 facility-item-col"
                     key={idx}
                   >
                     <div className="facility-item">
-                      <div className="facility-number">{idx + 1}</div>
+                      <div className="facility-number mb-2 mb-md-0">{idx + 1}</div>
                       <div className="facility-content">{item}</div>
                     </div>
                   </div>
@@ -391,13 +399,13 @@ export default function Institution() {
 
         <section className="doctors-grid-section">
           <div className="container ">
-            <div className="row doctors-grid-row gap-4 ">
+            <div className="row doctors-grid-row gap-4 mx-auto mx-md-0"> 
               {Doctors.map((doctor) => (
                 <div
                   className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12"
                   key={doctor.id}
                 >
-                  <div className="Faculty_doctor-card">
+                  <div className="Faculty_doctor-card ">
                     <div className="Faculty_doctor-img-wrap">
                       <Image
                         src={doctor.image}
@@ -451,6 +459,6 @@ export default function Institution() {
           professional journey.
         </div>
       </section>
-    </div>
+    </section>
   );
 }

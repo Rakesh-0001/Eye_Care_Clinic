@@ -30,6 +30,13 @@
     border-radius: 20px;
     object-fit: cover;
   }
+
+  .beh-main-img-mobile {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+  }
   .beh-img-small-top {
     min-width: 168px;
   }
@@ -141,6 +148,12 @@
     transform: rotate(45deg);
     transition: transform 0.3s cubic-bezier(.4,0,.2,1);
   }
+
+
+  .beh-main-img-container-mobile{
+    display: none;
+  }
+
   @media (max-width: 1200px) {
     .beh-title {
       font-size: 26px;
@@ -222,8 +235,8 @@
   }
   .beh-rightside-img-container{
     position: absolute;
-    left:480px;
-    top: 250px;
+    left:490px;
+    top: 260px;
 
     
   }
@@ -555,7 +568,7 @@ left: 13px;
       font-size: 12px;
     }
     .related-blogs-title {
-      font-size: 13px;
+      font-size: 16px;
     }
     .related-blog-arrow, .related-blog-arrow-left, .related-blog-arrow-right {
       width: 20px;
@@ -1069,5 +1082,169 @@ left: 13px;
   position: relative;
   left: 30px;
   top: 70px;
+
+}
+
+
+/* Existing styles above... */
+
+@media (max-width: 1200px) {
+  .beh-main-img {
+    height: 250px;
+  }
+  .beh-topright-img {
+    width: 100%;
+    height: 120px;
+  }
+  .beh-corner-img {
+    width: 100px;
+    height: 120px;
+  }
+  .beh-content-card {
+    min-height: 120px;
+    padding: 12px 8px;
+  }
+
+  .beh-main-img-container{
+    display: none;
+  }
+  .beh-main-img-container-mobile{
+    display: block;
+  }
+}
+
+/* ===== MOBILE & TABLET BREAKPOINT ===== */
+@media (max-width: 900px) {
+  .row.g-3.mt-4.d-flex.align-items-stretch {
+    flex-direction: column !important;
+  }
+  .col-lg-7, .col-lg-5, .col-md-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: unset !important;
+  }
+  .beh-main-img-container,
+  .beh-img-large-top,
+  .beh-rightside-img-container {
+    position: static !important;
+    width: 100% !important;
+    left: unset !important;
+    top: unset !important;
+    margin: 0 !important;
+  }
+  .beh-main-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .beh-img-large-top {
+    margin-top: 12px;
+    width: 100%;
+  }
+  .beh-topright-img {
+    width: 100%;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .beh-corner-img {
+    width: 70px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .beh-content-card {
+    min-height: 90px;
+    flex-direction: column !important;
+    padding: 10px 6px;
+    margin-top: 10px;
+  }
+  .beh-content-left {
+    padding: 0 !important;
+  }
+  .w-100.d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 6px;
+  }
+  .Get-direction-btn {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+  .Get-direction-icon-wrapper {
+    left: 0;
+    margin-left: 5px;
+  }
+
+  .beh-main-img-container{
+    display: none;
+  }
+  .beh-main-img-container-mobile{
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {  
+
+  .beh-main-img-container{
+    display: none;
+  }
+  .beh-main-img-container-mobile{
+    display: block;
+  }
+   .hospital-appointment-bg-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    margin: 0 auto;
+    /* display: none; */
+  }
+
+  .hospital-appointment-form-container {
+   
+    height: 552px;
+  
+  }
+
+  .hospital-appointment-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hospital-form-input {
+    width: 100%;
+    height: 40px;
+   
+  }
+
+  .hospital-form-submit-btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+   
+  }
+
+  .our-doctors-title {
+    font-size: 16px;
+    /* margin-bottom: 16px; */
+  }
+}
+
+@media (min-width: 1380px) { 
+
+  .beh-rightside-img-container{
+    position: absolute;
+    left:590px;
+    top: 340px;
+
+    
+  }
+
+
 
 }

@@ -1,6 +1,6 @@
 "use client";
-import BookAppointment from "@/components/BookAppointment";
-import ContactForm from "@/components/ContactForm";
+import BookAppointment from "../../components/BookAppointment";
+import ContactForm from "../../components/ContactForm";
 import { useRef } from "react";
 import { useState } from "react";
 

@@ -103,37 +103,35 @@ export default function doctor() {
             </h1>
           </div>
         </section>
-        <div className="container container_ ">
-          <div className="contact-page-breadcrumb ms-3">
+        <div className=" container_ ">
+          <div className="contact-page-breadcrumb ms-0 ms-md-0">
             <span>• Doctor</span>
           </div>
         </div>
 
-        <section className="doctor-hero-section py-5">
-          <div className="container">
-            <div className="row">
-              {/* Left Column: Title and Description */}
-              <div className="col-lg-8 col-md-10 col-12">
-                <h1 className="doctor-hero-title mb-3">
-                  Trusted Hands Behind
-                  <br />
-                  Your Eye Health
-                </h1>
-                <p className="doctor-hero-desc">
-                  Connect with the right specialist—pick your location and
-                  speciality for expert care suited to your vision needs. Easily
-                  find your perfect eye specialist—just choose your nearest
-                  location and filter by speciality to get expert care
-                  customized to your vision needs.
-                </p>
-              </div>
+        <section className="doctor-hero-section py-2 py-md-5">
+          <div className="row">
+            {/* Left Column: Title and Description */}
+            <div className="col-lg-8 col-md-10 col-12">
+              <h1 className="doctor-hero-title mb-3">
+                Trusted Hands Behind
+                <br />
+                Your Eye Health
+              </h1>
+              <p className="doctor-hero-desc">
+                Connect with the right specialist—pick your location and
+                speciality for expert care suited to your vision needs. Easily
+                find your perfect eye specialist—just choose your nearest
+                location and filter by speciality to get expert care customized
+                to your vision needs.
+              </p>
             </div>
           </div>
         </section>
 
         {/* Search Bar */}
-        <div className="d-flex justify-content-center align-items-center mt-3 mb-4">
-          <div className="search-container d-flex  align-items-center px-3 py-2">
+        <div className="d-flex justify-content-center align-items-center mt-3 mb-2 mb-md-4">
+          <div className="search-container d-flex  align-items-center px-2 px-md-2 py-2">
             <div className="input-group job-search-input-wrapper d-flex align-items-center flex-grow-1 ">
               <span
                 className="input-group-text border-none shadow-none "
@@ -143,11 +141,11 @@ export default function doctor() {
               </span>
 
               <select
-                className="form-select border-0 shadow-none mx-2"
+                className="form-select job-search-location-option border-0 shadow-none mx-0 mx-md-2"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               >
-                <option value="">Location</option>
+                <option value="">All Location</option>
                 {locations.map((loc) => (
                   <option key={loc} value={loc}>
                     {loc}
@@ -169,20 +167,29 @@ export default function doctor() {
                 ))}
               </select>
             </div>
+
             <button
-              className=" job-search-btn d-flex justify-content-between align-items-center "
+              className=" job-search-btn d-flex justify-content-between align-items-center d-none d-md-block"
               type="button"
               onClick={handleSearch}
             >
               <i className="bi bi-search me-3"></i>
               Search
             </button>
+
+            <button
+              className=" job-search-btn-mbile d-flex justify-content-between align-items-center d-block d-md-none"
+              type="button"
+              onClick={handleSearch}
+            >
+              <i className="bi bi-search me-0 me-md-3"></i>
+            </button>
           </div>
         </div>
 
         {/* First 3 doctors */}
 
-        <div className="container mx-auto mb-2 py-4 mt-4">
+        <div className=" mx-auto mb-2 py-4 mt-0 mt-md-4">
           {/* Location & Address */}
           <h1 className="location-title ">{location || "Nagercoil"}</h1>
           {filtered[0] && (
@@ -190,7 +197,7 @@ export default function doctor() {
           )}
         </div>
 
-        <div className="container mx-auto mb-4 py-4 mt-2">
+        <div className="container mx-auto mb-4 py-1 py-md-4 mt-0 mt-md-2">
           {doctorRows.map((row, rowIdx) => (
             <div className="doctor-list-row mb-3" key={rowIdx}>
               {row.map((doc) => (
@@ -206,7 +213,7 @@ export default function doctor() {
                         <img
                           src={doc.image}
                           alt={doc.name}
-                          className="doctor-img"
+                          className="Doctors-img"
                         />
                         <div className="arrow-box">
                           <button
@@ -223,7 +230,7 @@ export default function doctor() {
                       </div>
                       <div className="doctor-details-split">
                         <div>
-                          <div className="doctor-name">{doc.name}</div>
+                          <div className="doctors-name">{doc.name}</div>
                           <div className="doctor-qual">{doc.qualification}</div>
                         </div>
                         <div>
@@ -242,7 +249,7 @@ export default function doctor() {
                       <img
                         src={doc.image}
                         alt={doc.name}
-                        className="doctor-img"
+                        className="Doctors-img"
                       />
                       <div className="arrow-box">
                         <button
@@ -264,8 +271,8 @@ export default function doctor() {
           ))}
         </div>
 
-        <section className="review-section-container py-4">
-          <div className="container mb-4">
+        <section className="review-section-container py-1 py-md-5">
+          <div className=" mb-4">
             <div className="review-desc">
               <p>
                 At Bejan Singh Eye Hospital, our team of expert ophthalmologists
@@ -287,10 +294,10 @@ export default function doctor() {
               </p>
             </div>
           </div>
-          <div className="container mb-3 mt-4">
+          <div className=" mb-3 mt-4">
             <div className="review-title">Review</div>
           </div>
-          <div className="container">
+          <div className=" mb-4">
             <Swiper
               modules={[Navigation, Pagination]}
               spaceBetween={24}

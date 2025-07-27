@@ -99,67 +99,73 @@ export default function hospital() {
             </h1>
           </div>
         </section>
-        <div className="container container_ ">
-          <div className="contact-page-breadcrumb ms-3">
+        <div className=" container_ ">
+          <div className="contact-page-breadcrumb ms-0 ms-md-0">
             <span>• hospital</span>
           </div>
         </div>
 
+
         {/* Search Bar */}
-        <div className="d-flex justify-content-center align-items-center mt-3 mb-4">
-          <div className="search-container d-flex align-items-center px-3 py-2">
+        <div className="d-flex justify-content-center align-items-center mt-3 mb-2 mb-md-4">
+          <div className="search-container d-flex  align-items-center px-2 px-md-2 py-2">
             <div className="input-group job-search-input-wrapper d-flex align-items-center flex-grow-1 ">
               <span
-                className="input-group-text border-none shadow-none"
+                className="input-group-text border-none shadow-none "
                 id="basic-addon1"
               >
                 <i className="bi bi-geo-alt job-search-location-icon"></i>
               </span>
+
               <select
-                className="form-select border-0 shadow-none"
+                className="form-select job-search-location-option border-0 shadow-none mx-0 mx-md-2"
                 value={searchHospital}
                 onChange={(e) => setSearchHospital(e.target.value)}
               >
-                <option value="">Search hospital</option>
-                {hospitalNames.map((name, idx) => (
-                  <option key={idx} value={name}>
-                    {name}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="input-group job-search-input-wrapper d-flex align-items-center flex-grow-1 ">
-              <span
-                className="input-group-text border-none shadow-none"
-                id="basic-addon2"
-              >
-                <i className="bi bi-geo-alt job-search-location-icon"></i>
-              </span>
-              <select
-                className="form-select border-0 shadow-none mx-2"
-                value={searchLocation}
-                onChange={(e) => setSearchLocation(e.target.value)}
-              >
-                <option value="">location</option>
-                {locations.map((loc, idx) => (
-                  <option key={idx} value={loc}>
+                <option value="">hospital</option>
+                {hospitalNames.map((loc) => (
+                  <option key={loc} value={loc}>
                     {loc}
                   </option>
                 ))}
               </select>
             </div>
+            <div className="input-group job-search-input-wrapper d-flex align-items-center flex-grow-1 ">
+              <select
+                className="form-select border-0 shadow-none mx-2"
+                value={searchLocation}
+                onChange={(e) => setSearchLocation(e.target.value)}
+              >
+                <option value=""> location</option>
+                {locations.map((sp) => (
+                  <option key={sp} value={sp}>
+                    {sp}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             <button
-              className="job-search-btn d-flex justify-content-between align-items-center"
+              className=" job-search-btn d-flex justify-content-between align-items-center d-none d-md-block"
               type="button"
               onClick={handleSearch}
             >
               <i className="bi bi-search me-3"></i>
               Search
             </button>
+
+            <button
+              className=" job-search-btn-mbile d-flex justify-content-between align-items-center d-block d-md-none"
+              type="button"
+              onClick={handleSearch}
+            >
+              <i className="bi bi-search me-0 me-md-3"></i>
+            </button>
           </div>
         </div>
-        <section className="clinic-cards-section mt-5 mb-5 py-4">
-          <div className="container">
+
+        <section className="clinic-cards-section mt-1 mt-md-5 mb-0 mb-md-5 py-4">
+          <div className="">
             <div className="row justify-content-center">
               {filteredHospitals.map((hospital, idx) => (
                 <div
@@ -219,11 +225,13 @@ export default function hospital() {
             </div>
           </div>
         </section>
-        <section className="clinic_space mt-5 mb-5 py-4"></section>
 
-        <section className="blog-faq-section py-4">
-          <div className="container">
-            <h2 className="blog-title mb-2">Blog</h2>
+        
+        <section className="clinic_space mt-5 mb-0 mb-md-5 py-4 d-none d-md-block "></section>
+
+        <section className="blog-faq-section py-2 py-md-4">
+          <div className="">
+            <h2 className="blog-title  mb-2">Blog</h2>
             <p className="blog-desc mb-4 mt-4">
               Our doctors provide expert{" "}
               <span className="fw-bold">medical advice</span> and consultation

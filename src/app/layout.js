@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
-import BookAppointment from "@/components/BookAppointment";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import BookAppointment from "../components/BookAppointment";
 import "../app/globals.css";
 import "../../public/assets/Css/Nav.css";
 import "../../public/assets/Css/Footer.css";

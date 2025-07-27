@@ -142,23 +142,22 @@ export default function hospitalview() {
   };
 
   return (
-    <section className="blog-section">
-      <div className="container">
-        <section className="contact-header">
-          <div className="container mt-3">
-            <h1 className="contact-title-custom text-end mb-1">
-              <span className="contact-heading-green">hospital View</span>
-            </h1>
-          </div>
-        </section>
-        <div className="container">
-          <div className="contact-page-breadcrumb mb-4 ms-3">
-            <span>• hospital</span>
-          </div>
+    <section className="contact-content-section ">
+      <section className="contact-header ">
+        <div className="container mt-3">
+          <h1 className="contact-title-custom text-end mb-1">
+            <span className="contact-heading-green">Hospital</span>{" "}
+            <span className="contact-heading-white">View</span>
+          </h1>
+        </div>
+      </section>
+      <div className="container container_ py-5  ">
+        <div className="contact-page-breadcrumb ms-1 ms-md-0">
+          <span>• Hospital View</span>
         </div>
 
-        <section className="best-eye-hospital-section py-4">
-          <div className="container">
+        <section className="best-eye-hospital-section py-1 py-md-4">
+          <div className="">
             {/* Section Title & Description */}
             <div className="mb-2">
               <h2 className="beh-title">
@@ -175,8 +174,24 @@ export default function hospitalview() {
             {/* Grid Row */}
             <div className="row g-3 mt-4 d-flex align-items-stretch">
               {/* Left Main Image */}
-              <div className="col-lg-7 col-md-12">
-                <div className="beh-main-img-container ">
+              <div className="col-lg-7 col-md-12 ">
+                <div className="beh-main-img-container-mobile p-2  ">
+                  <Image
+                    src="/assets/Images/Hospital-view-section.jpg"
+                    alt="Main hospital view"
+                    width={713}
+                    height={565}
+                    className="beh-main-img-mobile"
+                    style={{
+                      borderRadius: 20,
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+
+                <div className="beh-main-img-container  ">
                   <div>
                     <Image
                       src="/assets/Images/Hospital-view.png"
@@ -283,8 +298,8 @@ export default function hospitalview() {
           </div>
         </section>
 
-        <section className="facilities-section py-4">
-          <div className="container">
+        <section className="facilities-section py-3 mt-3 py-md-4">
+          <div className="">
             <h2 className="facilities-title mb-5">Facilities</h2>
             <div className="row ">
               {facilities.map((facility, idx) => (
@@ -302,9 +317,9 @@ export default function hospitalview() {
           </div>
         </section>
 
-        <section className="hospital-description-section py-3">
-          <div className="container">
-            <h2 className="hospital-desc-title mb-3">Description</h2>
+        <section className="hospital-description-section py-1 py-md-3">
+          <div className="">
+            <h2 className="hospital-desc-title mb-4">Description</h2>
             <div className="hospital-desc-content mt-2">
               2/313C, Vettoornimadam, Nagercoil, 2/313C, Vettoornimadam, <br />
               Nagercoil, 2/313C, Vettoornimadam, Nagercoil, 2/313C, <br />
@@ -313,9 +328,10 @@ export default function hospitalview() {
           </div>
         </section>
 
-        <section className="related-blogs-section py-4">
+        <section className="related-blogs-section py-md-4 py-4">
+          <h2 className="related-blogs-title mb-5">Related blogs</h2>
+
           <div className="container">
-            <h2 className="related-blogs-title mb-5">Related blogs</h2>
             <div className="position-relative">
               {/* Swiper arrows */}
               <button className="related-blog-arrow related-blog-arrow-left">
@@ -384,7 +400,7 @@ export default function hospitalview() {
                 alt="Hospital background"
                 width={100}
                 height={500}
-                className="hospital-appointment-bg"
+                className="hospital-appointment-bg d-none d-md-block"
               />
               <div className="hospital-appointment-form-container">
                 <form className="hospital-appointment-form">
@@ -454,8 +470,8 @@ export default function hospitalview() {
           </div>
         </section>
 
-        <section className="our-doctors-section py-4">
-          <div className="container">
+        <section className="our-doctors-section py-1 py-md-4">
+          <div className="">
             <h2 className="our-doctors-title mb-4">Our doctors</h2>
             <div className="row mt-5 gx-4 gy-4">
               {doctors.map((doctor, idx) => (
@@ -492,18 +508,18 @@ export default function hospitalview() {
         </section>
         <div className="dummy-space"></div>
 
-        <section className="customer-testimonials-section py-5">
+        {/* <section className="customer-testimonials-section py-5">
           <div className="container">
             <div className="customer-testimonials-bg rounded-5 position-relative d-flex flex-column justify-content-center align-items-center">
               <div className="row w-100 align-items-center ">
-                {/* Left Title */}
+               
                 <div className="col-lg-3  d-flex align-items-center">
                   <span className="customer-testimonials-title  w-25">
                     Customer testimonials
                   </span>
                 </div>
 
-                {/* Right Boxes */}
+              
                 <div className="col-lg-8  d-flex justify-content-center align-items-center">
                   {testimonials.map((testi, idx) => (
                     <div
@@ -543,7 +559,7 @@ export default function hospitalview() {
                   ))}
                 </div>
               </div>
-              {/* Customer images row at bottom */}
+              
               <div className="customer-images-row d-flex justify-content-center align-items-center gap-3 mt-4 w-100">
                 <img
                   src="./assets/Images/Customer_tes_profile.jpg"
@@ -687,7 +703,7 @@ export default function hospitalview() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </section>
   );

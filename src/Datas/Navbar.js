@@ -8,7 +8,7 @@ export  const navItems = [
       { href: "/clinic", label: "Clinic" },
       { href: "/opticals", label: "Opticals" },
       { href: "institution", label: "Institution" },
-      { href: "/eye-care/lab-medical", label: "Lab & Medical" },
+      { href: "/labmedical", label: "Lab & Medical" },
     ],
   },
   {
