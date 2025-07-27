@@ -1,170 +1,429 @@
 /* ----------- NAVBAR GLASS EFFECT, BORDER, RADIUS ----------- */
 .eyecare-navbar-wrap {
-    position: relative;
-    z-index: 30;
-    margin-top: 10px;
-    background: transparent;
-    transition: box-shadow 0.2s;
-    padding: 20px;
-  }
-  
+  position: fixed; /* <-- fixed at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* background: radial-gradient(circle at center , rgba(46, 33, 213, 1) 25%, rgba(6, 12, 85, 1) 99%) top/100% 20% repeat, #060C55; */
+  transition: box-shadow 0.2s;
+  padding: 10px;
+}
+.eyecare-navbar {
+  width: 100%;
+  min-height: 40px;
+  margin: 0 auto;
+  border-radius: 40px;
+  border: 1px solid;
+  border-image-source: linear-gradient(90.09deg, rgba(0, 220, 154, 0.36) -0.17%, rgba(74, 62, 193, 0.36) 80.53%);
+  background: linear-gradient(90deg,  rgba(0, 0, 0, 0.18) 0%,  rgba(0, 0, 0, 0.18) 100%);
+  box-shadow: 0 4px 32px 0 rgba(19, 28, 101, 0.10);
+  backdrop-filter: blur(7px);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  align-items: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  opacity: 1;
+}
+/* ----------- LOGO AND BRAND TEXT ----------- */
+.eyecare-brand {
+  min-width: 160px;
+  font-size: 1.2rem;
+  padding-right: 20px;
+}
+.eyecare-brand .brand-text {
+  color: #fff;
+  font-size: 1.20rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.eyecare-brand .brand-green {
+  color: #18ff72;
+  font-weight: 700;
+  font-size: 1.18rem;
+}
+/* ----------- NAV LINKS AND SEPARATORS ----------- */
+.eyecare-nav-link.active,
+.eyecare-nav-link:hover {
+  color: rgb(0,214,150) !important;
+  text-shadow: 0 1px 2px #2632661c;
+}
+.eyecare-nav-separator {
+  color: #FFFFFF47;
+  font-weight: 400;
+  font-size: .8rem;
+  user-select: none;
+}
+/* ----------- BOOK NOW BUTTON ----------- */
+.btn-book-now {
+  color: #fff;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+  border-radius: 24px;
+  /* border: 1px solid white; */
+  padding: 6px 22px 6px 22px;
+  min-width: 120px;
+  background:  #00A876EB !important;
+  transition: background 0.2s;
+  position: relative;
+  left: 24px;
+  top: 1px;
+}
+.btn-book-now:hover {
+  background: #00a876a2 !important;
+  color: #fff;
+}
+/* ----------- MOBILE NAV TOGGLER ----------- */
+.eyecare-nav-toggle,
+.eyecare-nav-toggle-label {
+  display: none;
+}
+@media (max-width: 991.98px) {
   .eyecare-navbar {
-    width: 100%;
-    max-width: 1273px;
-    min-height: 47px;
-    margin: 0 auto;
-    border-radius: 40px;
-    border: 1px solid;
-    border-image-source: linear-gradient(90.09deg, rgba(0, 220, 154, 0.36) -0.17%, rgba(74, 62, 193, 0.36) 80.53%);
-    background: linear-gradient(90deg,  rgba(0, 0, 0, 0.18) 0%,  rgba(0, 0, 0, 0.18) 100%);
-    box-shadow: 0 4px 32px 0 rgba(19, 28, 101, 0.10);
-    backdrop-filter: blur(7px);
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    align-items: center;
-    transition: background 0.2s, box-shadow 0.2s;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    opacity: 1;
+    border-radius: 20px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    min-height: 46px;
   }
-  
-  /* ----------- LOGO AND BRAND TEXT ----------- */
-  .eyecare-brand {
-    min-width: 160px;
-    font-size: 1.2rem;
-    padding-right: 20px;
+  .eyecare-nav-links {
+    display: none !important;
   }
-  .eyecare-brand .brand-text {
-    color: #fff;
-    font-size: 1.20rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-  .eyecare-brand .brand-green {
-    color: #18ff72;
-    font-weight: 700;
-    font-size: 1.18rem;
-  }
-  
-  /* ----------- NAV LINKS AND SEPARATORS ----------- */
-  .eyecare-nav-link.active,
-  .eyecare-nav-link:hover {
-    color: rgb(0,214,150) !important;
-    text-shadow: 0 1px 2px #2632661c;
-  }
-  .eyecare-nav-separator {
-    color: #FFFFFF47;
-    font-weight: 400;
-    font-size: .8rem;
-    user-select: none;
-  }
-  
-  /* ----------- BOOK NOW BUTTON ----------- */
-  .btn-book-now {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1rem;
-    border: none;
-    border-radius: 24px;
-    padding: 10px 28px 10px 28px;
-    min-width: 120px;
-    background:  #00A876EB !important;
-    transition: background 0.2s;
-    position: relative;
-    left: 18px;
-    top: 1px;
-  }
-  .btn-book-now:hover {
-    background: #00a876a2 !important;
-    color: #fff;
-  }
-  
-  /* ----------- MOBILE NAV TOGGLER ----------- */
   .eyecare-nav-toggle,
   .eyecare-nav-toggle-label {
+    display: block;
+    position: absolute;
+    right: 90px;
+    top: 17px;
+    width: 32px;
+    height: 32px;
+    z-index: 31;
+    background: none;
+    border: none;
+  }
+  .eyecare-nav-toggle-label span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.25s;
+  }
+  .eyecare-mobile-menu {
     display: none;
+    position: absolute;
+    background: rgba(29, 33, 89, 0.98);
+    border-radius: 18px;
+    top: 60px;
+    right: 10px;
+    min-width: 190px;
+    z-index: 32;
+    box-shadow: 0 6px 24px 0 rgba(21,29,91,0.08);
+    padding: 18px 0 10px 0;
+    transition: opacity 0.18s;
   }
-  @media (max-width: 991.98px) {
-    .eyecare-navbar {
-      border-radius: 20px;
-      padding-left: 8px !important;
-      padding-right: 8px !important;
-      min-height: 46px;
-    }
-    .eyecare-nav-links {
-      display: none !important;
-    }
-    .eyecare-nav-toggle,
-    .eyecare-nav-toggle-label {
-      display: block;
-      position: absolute;
-      right: 90px;
-      top: 17px;
-      width: 32px;
-      height: 32px;
-      z-index: 31;
-      background: none;
-      border: none;
-    }
-    .eyecare-nav-toggle-label span {
-      display: block;
-      width: 24px;
-      height: 3px;
-      margin: 5px 0;
-      background: #fff;
-      border-radius: 2px;
-      transition: all 0.25s;
-    }
-    .eyecare-mobile-menu {
-      display: none;
-      position: absolute;
-      background: rgba(29, 33, 89, 0.98);
-      border-radius: 18px;
-      top: 60px;
-      right: 10px;
-      min-width: 190px;
-      z-index: 32;
-      box-shadow: 0 6px 24px 0 rgba(21,29,91,0.08);
-      padding: 18px 0 10px 0;
-      transition: opacity 0.18s;
-    }
-    .eyecare-nav-toggle:checked ~ .eyecare-mobile-menu {
-      display: block;
-    }
-    .eyecare-mobile-menu ul {
-      margin: 0;
-      padding: 0 10px;
-    }
-    .eyecare-mobile-menu .nav-link {
-      padding: 10px !important;
-      font-size: 1.07rem;
-      color: #fff !important;
-      border-radius: 7px;
-    }
-    .eyecare-mobile-menu .nav-link.active,
-    .eyecare-mobile-menu .nav-link:hover {
-      background: rgba(36, 255, 164, 0.18);
-      color: #18ff72 !important;
-    }
+  .eyecare-nav-toggle:checked ~ .eyecare-mobile-menu {
+    display: block;
   }
-  
-  /* ----------- FIXED NAV ON SCROLL ----------- */
-  .nav-fixed {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 2px;
-    width: 97vw !important;
-    margin-top: 20px !important;
-    animation: navFadeIn 0.6s;
-    z-index: 1000;
-    backdrop-filter: blur(8px);
-    background: #2E21D5;
-    background: radial-gradient(circle, rgba(46, 33, 213, 1) 45%, rgba(6, 12, 85, 1) 98%);
-    
+  .eyecare-mobile-menu ul {
+    margin: 0;
+    padding: 0 10px;
   }
-  @keyframes navFadeIn {
-    0% { opacity: 0; transform: translateY(-30px);}
-    100% { opacity: 1; transform: translateY(0);}
+  .eyecare-mobile-menu .nav-link {
+    padding: 10px !important;
+    font-size: 1.07rem;
+    color: #fff !important;
+    border-radius: 7px;
   }
+  .eyecare-mobile-menu .nav-link.active,
+  .eyecare-mobile-menu .nav-link:hover {
+    background: rgba(36, 255, 164, 0.18);
+    color: #18ff72 !important;
+  }
+}
+/* ----------- FIXED NAV ON SCROLL ----------- */
+.nav-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 2px;
+  width: 97vw !important;
+  margin-top: 20px !important;
+  animation: navFadeIn 0.6s;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background: #2E21D5;
+  background: radial-gradient(circle, rgba(46, 33, 213, 1) 45%, rgba(6, 12, 85, 1) 98%);
+}
+@keyframes navFadeIn {
+  0% { opacity: 0; transform: translateY(-30px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+.eyecare-nav-li {
+  position: relative;
+}
+.eyecare-dropdown-menu {
+  position: absolute;
+  top: 36px;
+  left: 12px;
+  min-width: 127px;
+  width: 180px; /* Adjust if needed */
+  background: rgb(74,65,213);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px 0 rgba(21,29,91,0.08);
+  padding: 8px 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.98);
+  transition: opacity 0.18s cubic-bezier(.6,.3,.7,.9), transform 0.22s cubic-bezier(.6,.3,.7,.9);
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.eyecare-dropdown-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+.eyecare-dropdown-link {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: underline;
+  background: transparent;
+  transition: background 0.15s, color 0.15s;
+  border-radius: 6px;
+  line-height: 1;
+  text-decoration: none;
+}
+.eyecare-dropdown-link:hover,
+.eyecare-dropdown-link:focus {
+  background: rgba(36, 255, 164, 0.16);
+  color: #18ff72;
+  text-decoration: none;
+}
+@media (max-width: 991.98px) {
+  /* Hide dropdown for mobile, show as simple menu or consider mobile dropdown logic */
+  .eyecare-dropdown-menu {
+    display: none !important;
+  }
+}
 
- 
+/* ...Keep your original styles above for desktop... */
+
+/* ----------- MOBILE/TABLET NAV OVERRIDE, OFF-CANVAS STYLE ----------- */
+.eyecare-mobile-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  margin-right: 0;
+  z-index: 1201;
+  position: relative;
+  top: 2.5px;
+}
+.eyecare-mobile-toggle-bar {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background: #222;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: all 0.25s;
+}
+.mobile-toggle-icon {
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  bottom: 3px;
+}
+@media (min-width: 992px) {
+  .eyecare-mobile-toggle {
+    display: none !important;
+  }
+  .eyecare-tablet-actions {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .eyecare-nav-links {
+    display: none !important;
+  }
+  .eyecare-tablet-actions {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+}
+/* Book Now for tablet (md to lg) */
+.btn-book-now-tablet {
+  color: #fff;
+  background: #00A876 !important;
+  /* border: 1px solid #fff; */
+  border-radius: 24px;
+  font-size: 16px;
+  padding: 9px 24px;
+  font-weight: 500;
+  transition: background 0.2s;
+  position: relative;
+  left: 20px;
+}
+.btn-book-now-tablet:hover {
+  background: #009860 !important;
+  color: #fff;
+}
+.eyecare-tablet-book-link {
+  margin-left: 8px;
+}
+@media (max-width: 767.98px) {
+  .eyecare-tablet-book-link {
+    display: none !important;
+  }
+}
+/* Off-canvas menu */
+.eyecare-mobile-menu-custom {
+  position: fixed;
+  top: 0;
+  right: -370px;
+  width: 340px;
+  max-width: 95vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 8px 32px 0 rgba(21,29,91,0.10);
+  z-index: 1202;
+  transition: right 0.28s cubic-bezier(.45,.02,.33,1);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: auto;
+}
+.eyecare-mobile-menu-custom.open {
+  right: 0;
+  transition: right 0.34s cubic-bezier(.45,.02,.33,1);
+}
+.eyecare-mobile-menu-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.22);
+  z-index: 1200;
+}
+/* Mobile menu header: logo + close */
+.eyecare-mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px 15px 18px;
+  border-bottom: 1px solid #f0f1f4;
+  background-color: rgb(14,16,110);
+}
+.eyecare-mobile-close {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+}
+.eyecare-mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 18px 0;
+}
+.eyecare-mobile-nav-list > li {
+  padding: 0 18px;
+  border-bottom: 1px solid #f0f1f4;
+}
+.eyecare-mobile-nav-list > li:last-child {
+  border-bottom: none;
+}
+.eyecare-mobile-link,
+.eyecare-mobile-dropdown-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  background: none;
+  border: none;
+  padding: 15px 0;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.14s;
+  outline: none;
+  text-decoration: none;
+}
+.eyecare-mobile-link.active,
+.eyecare-mobile-link:hover,
+.eyecare-mobile-dropdown-btn:focus {
+  background: #f8fafc;
+  color: #0b7f59;
+}
+.eyecare-arrow {
+  margin-left: auto;
+  font-size: 1rem;
+  transform: rotate(0deg);
+  transition: transform 0.16s;
+}
+.eyecare-arrow.open {
+  transform: rotate(180deg);
+}
+.eyecare-mobile-dropdown-list {
+  padding: 0 0 8px 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  background: #f6f9fc;
+  border-radius: 12px;
+  border: 1px solid #e8eaf0;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.eyecare-mobile-dropdown-list.show {
+  display: block;
+}
+.eyecare-mobile-dropdown-list li {
+  padding: 0;
+}
+.eyecare-mobile-dropdown-list .eyecare-mobile-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1c1f2e;
+  padding: 12px 16px;
+  background: transparent;
+  border-radius: 7px;
+}
+.eyecare-mobile-dropdown-list .eyecare-mobile-link.active,
+.eyecare-mobile-dropdown-list .eyecare-mobile-link:hover {
+  background: #e4f6ee;
+  color: #0b7f59;
+}
+.eyecare-mobile-book-btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b7f59;
+}
+.btn-book-now-mobile {
+  width: 90%;
+  padding: 12px 20px;
+  background-color: #0b7f59;
+}

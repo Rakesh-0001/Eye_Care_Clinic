@@ -1,0 +1,473 @@
+.opticals-section {
+    background: #fff;
+  }
+  .opticals-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    color: #2E2D79;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    z-index: 100;
+  }
+  .see-blue {
+    color: #2E2D79;
+  }
+  .faces-main-row {
+    min-height: 300px;
+  }
+  .main-face-wrap {
+    width: 242px;
+    height: 256px;
+    border-radius: 36px;
+    background: #f5f5f5;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+    z-index: 1;
+  }
+  .main-face-img {
+    border-radius: 36px;
+    width: 411px;
+    height: 443px;
+    object-fit: cover;
+  }
+  .glasses-overlay {
+    pointer-events: none;
+    transition: all 0.36s cubic-bezier(0.4,0,0.2,1);
+    opacity: 0.9;
+    z-index: 2;
+    
+  }
+  .glasses-anim {
+    animation: popIn 0.38s cubic-bezier(0.4,0,0.2,1);
+  }
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.8) translateY(-12px);}
+    60% { opacity: 1; transform: scale(1.07) translateY(0);}
+    100% { opacity: 1; transform: scale(1) translateY(0);}
+  }
+  .face-thumb {
+    cursor: pointer;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    margin-bottom: 18px;
+    transition: border 0.18s;
+    width: 142px;
+    height: 156px;
+    overflow: hidden;
+  }
+  .face-thumb:hover,
+  .active-face {
+    border: 2px solid #53BE90;
+  }
+  .thumb-img {
+    object-fit: cover;
+    width: 142px;
+    height: 156px;
+    border-radius: 24px;
+    position: relative;
+  }
+  .branded-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #2E2D79;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .glass-chooser-wrap {
+    gap: 24px;
+  }
+  .glass-box {
+    width: 90px;
+    height: 48px;
+    border-radius: 20px;
+    border: 2px solid #53BE90;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: border 0.18s, box-shadow 0.18s;
+    box-shadow: 0px 4px 8px 0 #0001;
+  }
+  .glass-box:last-child {
+    margin-right: 0;
+  }
+  .glass-box:hover,
+  .active-glass {
+    border: 2.5px solid #2E2D79;
+    box-shadow: 0 4px 12px 0 #53be9040;
+  }
+  .glass-img {
+    max-width: 80px;
+    max-height: 32px;
+    object-fit: contain;
+  }
+  /* Responsive */
+  @media (max-width: 992px) {
+    .opticals-title {
+      font-size: 32px;
+    }
+    .main-face-wrap {
+      width: 170px;
+      height: 180px;
+    }
+    .main-face-img {
+      width: 170px;
+      height: 180px;
+    }
+    .branded-text {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 600px) {
+    .main-face-wrap {
+      width: 110px;
+      height: 120px;
+      border-radius: 18px;
+    }
+    .main-face-img {
+      width: 110px;
+      height: 120px;
+      border-radius: 18px;
+    }
+    .face-thumb {
+      width: 40px;
+      height: 42px;
+      border-radius: 10px;
+    }
+    .thumb-img {
+      width: 40px;
+      height: 42px;
+      border-radius: 10px;
+    }
+    .glass-box {
+      width: 42px;
+      height: 24px;
+      border-radius: 10px;
+      margin-right: 8px;
+    }
+    .glass-img {
+      max-width: 28px;
+      max-height: 14px;
+    }
+    .branded-text {
+      font-size: 13px;
+      margin-right: 8px;
+    }
+  }
+
+  .Glasses-chooser{
+    position: relative;
+    top: 30px;
+  }
+  .opticals-section-bottom{
+    height: 400px;
+  }
+
+
+  /* Opticals code */
+
+  .opticals-brands-section {
+
+    width: 100%;
+  }
+  
+  .opticals-left-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #2E2D79;
+    line-height: 1;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 18px;
+  }
+  
+  .opticals-arrow-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #53BE90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    margin-bottom: 12px;
+    margin-left: 8px;
+  }
+  
+  .opticals-arrow-outer {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .opticals-arrow-inner {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+  
+  .opticals-brand-box {
+    width: 100%;
+    padding: 0 0 18px 0;
+  }
+  
+  .opticals-brand-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2E2D79;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+  }
+  
+  .opticals-brand-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #111111;
+    line-height: 1;
+    letter-spacing: 0;
+   margin-top: 20px;
+  }
+  
+  .opticals-brand-divider {
+    width: 100%;
+    border-bottom: 1px solid #00000033;
+    margin: 14px 0 0 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .opticals-left-title,
+    .opticals-brand-title {
+      font-size: 22px;
+    }
+    .opticals-arrow-container {
+      width: 52px;
+      height: 52px;
+    }
+    .opticals-arrow-outer,
+    .opticals-arrow-inner {
+      width: 23px;
+      height: 23px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .opticals-left-title,
+    .opticals-brand-title {
+      font-size: 14px;
+    }
+    .opticals-arrow-container {
+      width: 32px;
+      height: 32px;
+    }
+    .opticals-arrow-outer,
+    .opticals-arrow-inner {
+      width: 14px;
+      height: 14px;
+    }
+    .opticals-brand-desc {
+      font-size: 11px;
+    }
+  }
+
+
+  /* Eyewear code */
+
+  .eyewear-gallery-section {
+    width: 100%;
+  }
+  .eyewear-gallery-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .eyewear-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 74px;
+    color: #2E2D79;
+    line-height: 0.99;
+    letter-spacing: 0;
+    max-width: 430px;
+  }
+  .eyewear-img-main-wrap {
+    width: 100%;
+    max-width: 415px;
+    height: 646px;
+  }
+  .eyewear-img-main {
+    width: 100%;
+    height: 646px;
+    border-radius: 56px;
+    object-fit: cover;
+    box-shadow: 0 2px 18px 0 rgba(44,49,109,0.08);
+  }
+  .eyewear-img-top-wrap {
+    border-radius: 56px;
+    object-fit: cover;
+    width: 100%;
+    height: 356px;
+  }
+  .eyewear-img-top-right {
+    border-radius: 56px;
+    object-fit: cover;
+    width: 100%;
+    height: 356px;
+  }
+  .eyewear-img-small-left-wrap {
+    width: 100%;
+    max-width: 291px;
+  }
+  .eyewear-img-small-left {
+    width: 100%;
+    border-radius: 56px;
+    object-fit: cover;
+    max-width: 291px;
+    height: 392px;
+  }
+  .eyewear-grid-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 32px;
+    margin-left: 10px;
+  }
+  .eyewear-vision-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 94px;
+    color: #2E2D79;
+    line-height: 0.99;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 12px;
+    max-width: 400px;
+  }
+  .eyewear-vision-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #111111;
+    line-height: 1;
+    letter-spacing: 0;
+    max-width: 350px;
+    text-align: left;
+  }
+  .eyewear-img-bottom-wrap {
+    width: 100%;
+    height: 333px;
+  }
+  .eyewear-img-bottom-right {
+    border-radius: 56px;
+    object-fit: cover;
+    width: 100%;
+    height: 333px;
+    margin-top: 24px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1400px) {
+    .eyewear-title {
+      font-size: 46px;
+      max-width: 308px;
+    }
+    .eyewear-vision-title {
+      font-size: 64px;
+      max-width: 280px;
+    }
+  }
+  @media (max-width: 900px) {
+    .eyewear-title {
+      font-size: 28px;
+      max-width: 180px;
+    }
+    .eyewear-vision-title {
+      font-size: 32px;
+      max-width: 130px;
+    }
+    .eyewear-vision-desc {
+      font-size: 11px;
+      max-width: 120px;
+    }
+  }
+  @media (max-width: 600px) {
+    .eyewear-title {
+      font-size: 15px;
+      max-width: 100px;
+    }
+    .eyewear-vision-title {
+      font-size: 13px;
+      max-width: 48px;
+    }
+    .eyewear-vision-desc {
+      font-size: 8px;
+      max-width: 60px;
+    }
+    .eyewear-img-main-wrap,
+    .eyewear-img-small-left-wrap {
+      max-width: 100px;
+    }
+  }
+
+  .eyewear-img-main-wrap,
+.eyewear-img-small-left-wrap,.eyewear-img-top-wrap , .eyewear-img-bottom-wrap{
+  border-radius: 56px;
+  /* To keep the zoomed image inside rounded corners, use overflow hidden */
+  overflow: hidden;
+}
+
+.eyewear-img-main,
+.eyewear-img-top-right,
+.eyewear-img-small-left,
+.eyewear-img-bottom-right {
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+
+.eyewear-img-main:hover,
+.eyewear-img-top-right:hover,
+.eyewear-img-small-left:hover,
+.eyewear-img-bottom-right:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+
+  /*  */
+
+
+
+  .faculty-intro-content {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000B41;
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+    text-align: justify;
+    padding: 16px 0 60px 0;
+  }
+  @media (max-width: 700px) {
+    .faculty-intro-content {
+      font-size: 13px;
+      padding: 10px 0 5px 0;
+    }
+  }

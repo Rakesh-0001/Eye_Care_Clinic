@@ -1,43 +1,71 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import BookAppointment from "@/components/BookAppointment";
 import "../app/globals.css";
 import "../../public/assets/Css/Nav.css";
 import "../../public/assets/Css/Footer.css";
 import "../../public/assets/Css/Contact.css";
+import "../../public/assets/Css/Career.css";
+import "../../public/assets/Css/JobDetails.css";
+import "../../public/assets/Css/blog.css";
+import "../../public/assets/Css/BlogDetails.css";
+import "../../public/assets/Css/BookAppointment.css";
+import "../../public/assets/Css/Doctor.css";
+import "../../public/assets/Css/Institution.css";
+import "../../public/assets/Css/Opticals.css";
+import "../../public/assets/Css/Clinic.css";
+import "../../public/assets/Css/hospital.css";
+import "../../public/assets/Css/HospitalView.css";
+import "../../public/assets/Css/InternationalPatients.css";
+import "../../public/assets/Css/ContactForm.css";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'] });
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['700'] });
+
+
+
 
 export default function RootLayout({ children }) {
+
+
   return (
-    <html>
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-        crossorigin="anonymous"
-      ></link>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-      />
+    <html className={`${inter.className} ${plusJakarta.className}`}>
+     
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
+       <link
         href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
         rel="stylesheet"
       ></link>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap"
+        rel="stylesheet"
+      /> 
 
       <body>
-      
-        <Navbar></Navbar>
-        <div >{children}</div>
-        <Footer></Footer>
+        <Nav />
 
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-          crossorigin="anonymous"
-        ></script>
+        <main className="root-container">{children}</main>
+
+        <BookAppointment />
+
+        <Footer />
+
+      
       </body>
     </html>
   );

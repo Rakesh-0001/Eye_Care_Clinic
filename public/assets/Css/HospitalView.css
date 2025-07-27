@@ -1,0 +1,1073 @@
+.best-eye-hospital-section {
+    width: 100%;
+  }
+  .beh-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #2E2D79;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  .beh-title-green {
+    color: #36E290;
+  }
+  .beh-title-blue {
+    color: #2E2D79;
+  }
+  .beh-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #323131;
+    line-height: 1;
+    letter-spacing: 0;
+    max-width: 850px;
+  }
+  .beh-main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .beh-img-small-top {
+    min-width: 168px;
+  }
+  .beh-corner-img {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 150px;
+    height: 250px;
+  }
+  .beh-img-large-top {
+    min-width: 240px;
+    flex-grow: 1;
+  }
+  .beh-topright-img {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 531px;
+    height: 240px;
+    max-width: 100%;
+  }
+  .beh-content-card {
+    width: 100%;
+    background: #000B41;
+    border-radius: 20px;
+    min-height: 240px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0px 8px 32px 0px #00000014;
+  }
+  .beh-content-left {
+    color: #fff;
+    min-width: 0;
+  }
+  .beh-location-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .beh-location-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  .beh-star-icon {
+    color: #FFD600;
+    font-size: 18px;
+  }
+  .beh-customers {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+  }
+  .beh-working-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+  }
+  .beh-working-hours {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1;
+  }
+  .beh-direction-btn {
+    width: 193px;
+    height: 40px;
+    border-radius: 20px;
+    background: #53BE90;
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.2s;
+  }
+  .beh-direction-btn:hover {
+    background: #36E290;
+  }
+  .beh-arrow-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background: #000B41;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+  }
+  .beh-direction-arrow {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(45deg);
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  }
+  @media (max-width: 1200px) {
+    .beh-title {
+      font-size: 26px;
+    }
+    .beh-main-img {
+      height: 300px;
+      object-fit: cover;
+    }
+    .beh-img-large-top .beh-topright-img {
+      width: 100%;
+      height: 160px;
+    }
+    .beh-corner-img {
+      width: 100px;
+      height: 160px;
+    }
+    .beh-content-card {
+      min-height: 180px;
+      padding: 12px 8px;
+    }
+    .beh-location-title,
+    .beh-working-title {
+      font-size: 18px;
+    }
+    .beh-working-hours {
+      font-size: 15px;
+    }
+    .beh-direction-btn {
+      font-size: 15px;
+      width: 120px;
+      height: 32px;
+    }
+    .beh-arrow-circle {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  @media (max-width: 900px) {
+    .beh-title {
+      font-size: 18px;
+    }
+    .beh-desc,
+    .beh-location-desc,
+    .beh-customers,
+    .beh-working-hours,
+    .beh-direction-btn {
+      font-size: 12px;
+    }
+    .beh-location-title,
+    .beh-working-title {
+      font-size: 14px;
+    }
+    .beh-main-img,
+    .beh-img-large-top .beh-topright-img,
+    .beh-corner-img {
+      height: 80px;
+      width: 100%;
+    }
+    .beh-content-card {
+      min-height: 90px;
+      padding: 8px 4px;
+    }
+    .beh-direction-btn {
+      width: 80px;
+      height: 22px;
+      font-size: 11px;
+    }
+    .beh-arrow-circle {
+      width: 18px;
+      height: 18px;
+    }
+    .beh-direction-arrow {
+      font-size: 12px;
+    }
+  }
+
+  .beh-main-img-container{
+    position: relative;
+  }
+  .beh-rightside-img-container{
+    position: absolute;
+    left:480px;
+    top: 250px;
+
+    
+  }
+
+
+  .Get-direction-btn {
+
+    /* width: 166px; */
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    border-radius: 20px;
+    background: #53BE90;
+    color: #fff;
+ 
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 14px;
+
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    backdrop-filter: blur(15.7px);
+    -webkit-backdrop-filter: blur(15.7px);
+  }
+  .Get-direction-btn:hover,
+  .Get-direction-btn:focus {
+    background: #fff;
+    color: #000B41;
+  }
+ .Get-direction-icon-wrapper{
+
+    width: 32;
+height: 32;
+border-radius: 50%;
+padding: 5px 8px;
+background-color: #000B41;
+position: relative;
+left: 13px;
+
+  }
+  .download-icon {
+    font-size:11px;
+    color: white;
+    margin-left: 1px;
+    margin-right: 0;
+  }
+
+
+  /* Facilit */
+
+
+  .facilities-section {
+    width: 100%;
+
+  }
+  .facilities-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000B41;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+  }
+  .facilities-number {
+    width: 58px;
+    height: 58px;
+    background: #00DC9A;
+    border-radius: 50%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    margin-bottom: 0;
+  }
+  .facilities-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000B41;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+  @media (max-width: 900px) {
+    .facilities-title {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .facilities-number {
+      width: 38px;
+      height: 38px;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+    .facilities-desc {
+      font-size: 11px;
+    }
+    .facilities-section {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .col-lg-4 {
+      margin-bottom: 12px;
+    }
+  }
+
+
+  /* hospital-description-section code  */
+
+
+  .hospital-description-section {
+    width: 100%;
+  }
+  .hospital-desc-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000B41;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+  }
+  .hospital-desc-content {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000B41;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  @media (max-width: 900px) {
+    .hospital-desc-title {
+      font-size: 16px;
+    }
+    .hospital-desc-content {
+      font-size: 12px;
+    }
+  }
+
+
+  /* related-blogs-section  */
+
+
+  .related-blogs-section {
+    width: 100%;
+    /* background: #fff; */
+  }
+  .related-blogs-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000B41;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 36px;
+  }
+  .related-blogs-swiper {
+    width: 100%;
+    /* background-color: #FFD600; */
+  }
+  .related-blog-card {
+    width:350px;
+    height: 230px;
+    background: #00A876;
+    border-radius: 32px;
+    display: flex;
+    box-shadow: 0px 4px 16px 0px #00000014;
+    overflow: hidden;
+  }
+  .related-blog-img-wrap {
+    width: 50%;
+    height: 304px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .related-blog-img {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 32px;
+    width: 100%;
+    height: 304px;
+    object-fit: cover;
+  }
+  .related-blog-content-wrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .related-blog-date {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-bottom: 6px;
+  }
+  .related-blog-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #F9FFFD;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .related-blog-category {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+  .related-blog-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFBFB;
+    /* margin-bottom: 10px; */
+  }
+  .related-blog-readmore {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFBFB;
+    text-align: justify;
+    cursor: pointer;
+    transition: text-decoration 0.2s;
+  }
+  .related-blog-readmore:hover {
+    text-decoration: underline;
+  }
+  .related-blog-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 1;
+    font-size: 22px;
+    box-shadow: 0px 4px 8px 0px #00000012;
+    cursor: pointer;
+  }
+  .related-blog-arrow-left {
+    left: -46px;
+  }
+  .related-blog-arrow-right {
+    right: -46px;
+  }
+  .related-blog-arrow i {
+    font-size: 22px;
+    color: #000B41;
+  }
+  @media (max-width: 1200px) {
+    .related-blog-card {
+      width: 320px;
+      height: 210px;
+      border-radius: 20px;
+    }
+    .related-blog-img-wrap {
+      width: 140px;
+      height: 210px;
+    }
+    .related-blog-img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 20px;
+      width: 140px;
+      height: 210px;
+    }
+    .related-blog-content-wrap {
+      width: 180px;
+      height: 100%;
+    }
+    .related-blog-title {
+      font-size: 20px;
+    }
+    .related-blogs-title {
+      font-size: 19px;
+    }
+    .related-blog-arrow, .related-blog-arrow-left, .related-blog-arrow-right {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      left: -38px;
+      right: -38px;
+    }
+  }
+  @media (max-width: 900px) {
+    .related-blog-card {
+      width: 100vw;
+      height: 140px;
+      border-radius: 12px;
+    }
+    .related-blog-img-wrap {
+      width: 80px;
+      height: 140px;
+    }
+    .related-blog-img {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 12px;
+      width: 80px;
+      height: 140px;
+    }
+    .related-blog-content-wrap {
+      width: calc(100vw - 80px);
+      height: 100%;
+    }
+    .related-blog-title {
+      font-size: 12px;
+    }
+    .related-blogs-title {
+      font-size: 13px;
+    }
+    .related-blog-arrow, .related-blog-arrow-left, .related-blog-arrow-right {
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+      left: -18px;
+      right: -18px;
+    }
+  }
+
+
+  /*  */
+
+
+  .hospital-appointment-section {
+    width: 100%;
+  }
+  .hospital-appointment-bg-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    margin: 0 auto;
+  }
+  .hospital-appointment-bg {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+  }
+  .hospital-appointment-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 446px;
+    height: 452px;
+    transform: translate(-50%, -50%);
+    background: #53BE906B;
+    border-radius: 20px;
+    backdrop-filter: blur(43.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0 #00000014;
+  }
+  .hospital-appointment-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hospital-form-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    padding: 0 20px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000B41;
+    outline: none;
+  }
+  .hospital-form-input::placeholder {
+    color: #000B41;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  .hospital-form-message {
+    height: 50px;
+    resize: none;
+    padding-top: 10px;
+  }
+  .hospital-form-agree-wrap {
+    font-size: 0.95rem;
+  }
+  .hospital-form-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #000B41;
+  }
+  .hospital-form-agree-text {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    user-select: none;
+  }
+  .hospital-form-submit-btn {
+    width: 401px;
+    height: 40px;
+    border-radius: 20px;
+    background: #000B41;
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background 0.2s;
+    margin-bottom: 0;
+  }
+  .hospital-form-submit-btn:hover {
+    background: #53BE90;
+  }
+  @media (max-width: 900px) {
+    .hospital-appointment-bg-wrap {
+      max-width: 100vw;
+    }
+    .hospital-appointment-form-container {
+      width: 95vw;
+      height: auto;
+      min-height: 320px;
+      padding: 16px 0;
+    }
+    .hospital-form-submit-btn {
+      width: 90vw;
+      height: 32px;
+      font-size: 14px;
+    }
+    .hospital-form-input {
+      height: 28px;
+      font-size: 13px;
+      padding: 0 10px;
+    }
+    .hospital-form-agree-text {
+      font-size: 7px;
+    }
+  }
+
+
+  /* Our Docters */
+
+
+  .our-doctors-section {
+    width: 100%;
+    position: relative;
+    top: 25px;
+    
+  }
+  .Our-doctor-card{
+    width: 265px;
+    border-radius: 15.19px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 25px 10px;
+   
+    transition: border 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+  }
+  .our-doctors-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000B41;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 34px;
+  }
+
+  .Our-doctor-card:hover {
+    border: 2px solid;
+    border-radius: 15.19px;
+    border-image-source: linear-gradient(131.46deg, #4A3EC1 2.61%, #00DC9A 88.61%);
+    border-image-slice: 1;
+  }
+  .doctor-img-wrap {
+    width: 88.6px;
+    height: 88.6px;
+    border-radius:63px ;
+    margin-top: -45px;
+
+    position: relative;
+  }
+  .doctor-img {
+    border-radius: 63.28px;
+    width: 88.6px;
+    height: 88.6px;
+    object-fit: cover;
+    box-shadow: 0px 2px 8px 0px #00000018;
+  }
+  .doctor-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1F2937;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .doctor-role {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #757575;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .doctor-schedule {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 6px;
+    color: #757575;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .doctor-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #9CA3AF;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .doctor-icons {
+    gap: 7px;
+  }
+  .doctor-icon {
+    width: 15.2px;
+    height: 15.2px;
+    font-size: 15.2px;
+    color: #6B7280;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .doctor-icon:hover {
+    color: #1F2937;
+  }
+  @media (max-width: 900px) {
+    .doctor-card {
+      width: 90vw;
+      min-width: 180px;
+      height: auto;
+      padding: 24px 8px;
+      gap: 6px;
+    }
+    .doctor-img-wrap, .doctor-img {
+      width: 60px;
+      height: 60px;
+      margin-top: -26px;
+    }
+    .our-doctors-title {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .doctor-name {
+      font-size: 12px;
+    }
+    .doctor-role {
+      font-size: 9px;
+    }
+    .doctor-schedule {
+      font-size: 5px;
+    }
+    .doctor-desc {
+      font-size: 8px;
+    }
+  }
+
+  .dummy-space{
+    height: 100px;
+  }
+
+  /* Review code */
+
+  .customer-testimonials-section {
+    width: 100%;
+    /* background: #fff; */
+  }
+  .customer-testimonials-bg {
+    background: #53BE90;
+    min-height: 440px;
+    width: 100%;
+    padding: 36px 0 44px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-testimonials-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 0;
+    position: relative;
+    bottom: 38px;
+    left: 15px;
+    
+  }
+  .customer-testimonials-map-wrap {
+    width: 300px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .customer-testimonials-map {
+    width: 300px;
+    height: 340px;
+    object-fit: contain;
+  }
+  .customer-testimonial-box {
+    width: 250px;
+    height: 150px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px #00000018;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+    left: 170px;
+    bottom: 20px;
+  }
+  .customer-testimonial-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #000B41;
+    text-align: justify;
+    margin-bottom: 12px;
+  }
+  .customer-testimonial-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000B41;
+  }
+  .customer-testimonial-profile {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 28px;
+    height: 28px;
+  }
+  .customer-testimonial-rating {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #53BE90;
+    text-align: center;
+  }
+  .customer-testimonial-star {
+    color: #53BE90;
+    font-size: 14px;
+  }
+  .customer-images-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    padding-top: 28px;
+    padding-bottom: 8px;
+    position: relative;
+    left: 90px;
+  }
+  .customer-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 52px;
+    height: 52px;
+    border: 3px solid #fff;
+    background: #fff;
+  }
+  @media (max-width: 1200px) {
+    .customer-testimonials-title {
+      font-size: 32px;
+    }
+    .customer-testimonials-bg {
+      min-height: 320px;
+      padding: 18px 0 22px 0;
+    }
+    .customer-testimonial-box {
+      width: 200px;
+      height: 120px;
+      font-size: 11px;
+      margin-right: 7px;
+      margin-left: 7px;
+    }
+    .customer-testimonials-map-wrap,
+    .customer-testimonials-map {
+      width: 100px;
+      height: 120px;
+    }
+    .customer-image {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  @media (max-width: 900px) {
+    .customer-testimonials-title {
+      font-size: 16px;
+    }
+    .customer-testimonials-bg {
+      min-height: 200px;
+      padding: 7px 0 11px 0;
+    }
+    .customer-testimonial-box {
+      width: 110px;
+      height: 60px;
+      font-size: 7px;
+      margin-right: 2px;
+      margin-left: 2px;
+      padding: 5px 2px;
+    }
+    .customer-testimonials-map-wrap,
+    .customer-testimonials-map {
+      width: 52px;
+      height: 60px;
+    }
+    .customer-image {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+.testimonial-profile1{
+
+  position: relative;
+  left: -180px;
+  top: -60px;
+
+}
+
+.testimonial-profile2{
+
+  position: relative;
+  left: -290px;
+  top: 40px;
+
+}
+
+.testimonial-profile3{
+
+  position: relative;
+  left: -220px;
+  top: 10px;
+}
+
+.testimonial-profile4{
+
+  position: relative;
+  left: -180px;
+  top: 50px;
+
+}
+
+
+.testimonial-profile5{
+
+  position: relative;
+  left: -180px;
+  top: -40px;
+
+}
+
+
+.testimonial-profile6{
+
+  position: relative;
+  left: -130px;
+  top: 40px;
+
+}
+
+
+.testimonial-profile7{
+
+  position: relative;
+  left: -100px;
+  top: 0px;
+
+}
+
+.testimonial-profile8{
+
+  position: relative;
+  left: -30px;
+  top: 60px;
+
+}
+
+.testimonial-profile9{
+
+  position: relative;
+  left: -10px;
+  top: -40px;
+
+}
+
+.testimonial-profile10{
+
+  position: relative;
+  left: 30px;
+  top: 70px;
+
+}

@@ -9,4 +9,29 @@ body, html {
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
 
+
+.root-container {
+  background: #fff;
+  border-radius: 119px;
+  box-shadow: 0 10px 48px 0 rgba(19, 28, 101, 0.10);
+  margin-top:80px;
+  min-height: 100%;
+  /* z-index: 2; */
+  
+}
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .root-container {
+    border-radius: 48px;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .root-container {
+    border-radius: 24px;
+  }
+}

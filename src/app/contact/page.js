@@ -1,4 +1,5 @@
 "use client";
+import BookAppointment from "@/components/BookAppointment";
 import ContactForm from "@/components/ContactForm";
 import { useRef } from "react";
 import { useState } from "react";
@@ -158,161 +159,58 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-page-bg">
-      {/* Gradient Header */}
-      <section className="contact-header py-5">
-        <div className="container">
-          <h1 className="contact-title-custom text-center mb-2">
+    <section className="contact-content-section ">
+      <section className="contact-header ">
+        <div className="container mt-3">
+          <h1 className="contact-title-custom text-end mb-1">
             <span className="contact-heading-green">Contact</span>{" "}
             <span className="contact-heading-white">us</span>
           </h1>
-          <p className="contact-subtitle text-center mb-5">
-            Our doctors provide expert <span className="text-white">medical advice</span>  and consultation for all
-            your eye care <br /> needs. Get in touch with our team & clinics.
-          </p>
         </div>
       </section>
+      <div className="container container_ py-5 ">
+        <div className="contact-page-breadcrumb ms-1 ms-md-3">
+          <span>• Contact us</span>
+        </div>
 
-
-      {/* Floating white card section */}
-      
-      <section className="contact-content-section" >
-        <div className="container container_ py-5">
-          <div className="contact-page-breadcrumb ms-3">
-            <span>• Contact us</span>
-          </div>
-          <div className="row g-4 align-items-start mt-2">
-            {/* LEFT */}
-            <div className="col-lg-4">
-              <div className="contact-panel-left p-2 h-100">
-                <div className="mb-4">
-                  <h2 className="contact-big-title mb-4">
-                    Reach Out <br />
-                    for Expert <br />
-                    Eye Care
-                  </h2>
-                  <p className="contact-side-desc mb-4">
-                    Our team is here to assist you with appointments, service
-                    inquiries, and any eye care concerns you may have.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* RIGHT */}
-            <div className="col-lg-8">
-              <div className="contact-info-card mb-4 p-4 rounded-4">
-                {hospitals.map((h, i) => (
-                  <div key={h.name}>
-                    <div className="row g-3">
-                      <div className="col-8">
-                        <div className="contact-hospital-title">{h.name}</div>
-                        <div className="contact-hospital-address mt-3">
-                          {h.address}
-                        </div>
-                        {h.email && (
-                          <div className="contact-hospital-label">
-                            email:{" "}
-                            <span className="contact-hospital-email">
-                              {h.email}
-                            </span>
-                          </div>
-                        )}
-                        <div className="contact-hospital-label">
-                          <span>Opening Hours:</span>{" "}
-                          <span className="contact-hospital-hours">
-                            {h.opening}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-4 text-end">
-                        <div className="contact-hospital-phone-label">
-                          Phone number
-                        </div>
-                        <div className="contact-hospital-phone-value">
-                          {h.phone}
-                        </div>
-                        <a
-                          href={h.map}
-                          className="contact-hospital-map-link d-block mt-2"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          View location in map
-                        </a>
-                      </div>
-                    </div>
-                    <hr className="my-3" />
-                  </div>
-                ))}
+        <div className="row g-2 g-md-4 align-items-start mt-2">
+          {/* LEFT */}
+          <div className="col-lg-4">
+            <div className="contact-panel-left p-0 p-md-2 h-100">
+              <div className="mb-4">
+                <h2 className="contact-big-title mb-4">
+                  Reach Out for Expert Eye Care
+                </h2>
+                <p className="contact-side-desc mb-4">
+                  Our team is here to assist you with appointments, service
+                  inquiries, and any eye care concerns you may have.
+                </p>
               </div>
             </div>
           </div>
-          <div className="row g-4">
-            {/* LEFT - Menu */}
-            <div className="col-md-4 col-lg-4">
-              <div className="contact-location-menu pt-3 pb-3">
-                {LOCATIONS.map((group) => (
-                  <div key={group.group}>
-                    {/* Group Heading */}
-                    <button
-                      className={`contact-location-group-btn${
-                        openGroup === group.group ? " open" : ""
-                      }`}
-                      type="button"
-                      onClick={() => setOpenGroup(group.group)}
-                    >
-                      {group.group}
-                      <span className="contact-location-group-arrow arrow_">
-                        ›
-                      </span>
-                    </button>
-                    {/* Dropdown Items */}
-                    {openGroup === group.group && (
-                      <ul className="contact-location-list">
-                        {group.items.map((item) => (
-                          <li key={item.label}>
-                            <button
-                              className={`contact-location-list-btn${
-                                selectedItem === item.label ? " active" : ""
-                              }`}
-                              onClick={() => setSelectedItem(item.label)}
-                              type="button"
-                            >
-                              {item.label}
-                            </button>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* RIGHT - Details */}
-            <div className="col-md-8 col-lg-8">
-              <div className="contact-location-detail p-4">
-                {currentDetail && (
-                  <div className="row g-3 mt-1">
+          {/* RIGHT */}
+          <div className="col-lg-8">
+            <div className="contact-info-card mb-4 p-1 p-md-4 rounded-4">
+              {hospitals.map((h, i) => (
+                <div key={h.name}>
+                  <div className="row g-3">
                     <div className="col-8">
-                      <div className="contact-hospital-title">
-                        {currentDetail.name}
-                      </div>
+                      <div className="contact-hospital-title">{h.name}</div>
                       <div className="contact-hospital-address mt-3">
-                        {currentDetail.address}
+                        {h.address}
                       </div>
-                      {currentDetail.email && (
+                      {h.email && (
                         <div className="contact-hospital-label">
                           email:{" "}
                           <span className="contact-hospital-email">
-                            {currentDetail.email}
+                            {h.email}
                           </span>
                         </div>
                       )}
                       <div className="contact-hospital-label">
                         <span>Opening Hours:</span>{" "}
                         <span className="contact-hospital-hours">
-                          {currentDetail.opening}
+                          {h.opening}
                         </span>
                       </div>
                     </div>
@@ -321,10 +219,10 @@ export default function Contact() {
                         Phone number
                       </div>
                       <div className="contact-hospital-phone-value">
-                        {currentDetail.phone}
+                        {h.phone}
                       </div>
                       <a
-                        href={currentDetail.map}
+                        href={h.map}
                         className="contact-hospital-map-link d-block mt-2"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -333,17 +231,109 @@ export default function Contact() {
                       </a>
                     </div>
                   </div>
-                )}
-              </div>
+                  <hr className="my-3" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="row g-2 g-md-4 ">
+          {/* LEFT - Menu */}
+          <div className="col-md-4 col-lg-4">
+            <div className="contact-location-menu pt-3 pb-3">
+              {LOCATIONS.map((group) => (
+                <div key={group.group}>
+                  {/* Group Heading */}
+                  <button
+                    className={`contact-location-group-btn${
+                      openGroup === group.group ? " open" : ""
+                    }`}
+                    type="button"
+                    onClick={() => setOpenGroup(group.group)}
+                  >
+                    {group.group}
+                    <span className="contact-location-group-arrow arrow_">
+                      ›
+                    </span>
+                  </button>
+                  {/* Dropdown Items */}
+                  {openGroup === group.group && (
+                    <ul className="contact-location-list">
+                      {group.items.map((item) => (
+                        <li key={item.label}>
+                          <button
+                            className={`contact-location-list-btn${
+                              selectedItem === item.label ? " active" : ""
+                            }`}
+                            onClick={() => setSelectedItem(item.label)}
+                            type="button"
+                          >
+                            {item.label}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
 
-          <div>
-            <ContactForm></ContactForm>
+          {/* RIGHT - Details */}
+          <div className="col-md-8 col-lg-8">
+            <div className="contact-location-detail p-1 p-md-4">
+              {currentDetail && (
+                <div className="row g-3 mt-0 mt-md-1">
+                  <div className="col-8">
+                    <div className="contact-hospital-title">
+                      {currentDetail.name}
+                    </div>
+                    <div className="contact-hospital-address mt-3">
+                      {currentDetail.address}
+                    </div>
+                    {currentDetail.email && (
+                      <div className="contact-hospital-label">
+                        email:{" "}
+                        <span className="contact-hospital-email">
+                          {currentDetail.email}
+                        </span>
+                      </div>
+                    )}
+                    <div className="contact-hospital-label">
+                      <span>Opening Hours:</span>{" "}
+                      <span className="contact-hospital-hours">
+                        {currentDetail.opening}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-4 text-end">
+                    <div className="contact-hospital-phone-label">
+                      Phone number
+                    </div>
+                    <div className="contact-hospital-phone-value">
+                      {currentDetail.phone}
+                    </div>
+                    <a
+                      href={currentDetail.map}
+                      className="contact-hospital-map-link d-block mt-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View location in map
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      </section>
 
-    </div>
+        <div>
+          <ContactForm></ContactForm>
+        </div>
+      </div>
+
+      <div className="dummy"></div>
+    </section>
   );
 }

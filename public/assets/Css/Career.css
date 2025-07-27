@@ -1,0 +1,748 @@
+ .career-section {
+    /* background: #fff; */
+    padding-top: 15px;
+  } 
+  
+  .contact-title-custom {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .contact-heading-green {
+    color: #00DC9A;
+  }
+  
+  .career-img-wrapper {
+    width: 100%;
+    max-width: 404px;
+    height: 467px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    overflow: visible; /* allow badge to overflow */
+ 
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .career-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .career-img-badge {
+    position: absolute;
+    left: 24px;
+    bottom: 20px;
+    background: #fff;
+    border-radius: 32px;
+    padding: 10px 28px 10px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: #00DC9A;
+    font-weight: 600;
+    border: 1px solid #00DC9A;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  
+  .career-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.05em;
+    color: #000B41;
+    display: inline-block;
+    padding: 8px 16px 8px 0;
+    border-radius: 0 13px 13px 0;
+  }
+  
+  .career-desc,
+  .career-desc2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0px;
+    color: #151515;
+    text-align: justify;
+  }
+  
+  .career-bold {
+    font-weight: 700;
+  }
+  .contact-page-breadcrumb{
+    color: #000B41;
+    font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+  }
+  
+
+  @media (max-width: 767.98px) {
+    .career-title {
+      font-size: 2rem;
+      padding-right: 0;
+    }
+    .career-img-wrapper {
+      max-width: 220px;
+      height: 220px;
+    }
+    .career-img-badge {
+      font-size: 1rem;
+      padding: 6px 18px 6px 14px;
+      left: 12px;
+      bottom: 10px;
+      border-radius: 20px;
+    }
+  }
+  
+
+  .career-img-badge-outside {
+    position: absolute;
+    right: -26px;
+    bottom: 44px;
+    background: transparent;
+    color: #00A876;
+    border-radius: 32px;
+    padding: 10px 35px 10px 30px;
+    font-family:  'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    white-space: nowrap;
+    z-index: 5;
+    /* Optional: add a subtle blue outline for extra pop */
+  }
+
+@media (max-width: 991.98px) {
+  .career-img-wrapper {
+    max-width: 320px;
+    height: 340px;
+  }
+  .career-img-badge-outside {
+    font-size: 1.1rem;
+    padding: 8px 22px 8px 14px;
+    right: -10px;
+    bottom: -12px;
+  }
+}
+
+
+.job-openings-section {
+  background: #fff;
+}
+
+.job-openings-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #000B41;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.job-openings-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.job-openings-bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  color: #111111;
+}
+
+
+/* Jobs */
+
+
+.job-search-container {
+  width: 416px;
+  min-height: 71px;
+  border-radius: 8px;
+  background: #53BE90;
+  gap: 15px;
+  padding: 19px 23px;
+  box-sizing: border-box;
+  backdrop-filter: blur(51.4px);
+  display: flex;
+  align-items: center;
+}
+
+.job-search-input {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #000B41;
+  padding: 0;
+}
+
+.job-search-btn {
+  background: #000B41;
+  color: #fff;
+  border-radius: 8px;
+  height: 42px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s;
+  padding: 10px 20px 10px 20px;
+}
+.job-search-btn:hover, .job-search-btn:focus { background: #222b5c; }
+
+.job-search-input::placeholder {
+  color: #000B41; /* Change this to your desired color */
+}
+
+.job-categories-tabs {
+  border-bottom: 4px solid #000B41;
+  margin-bottom: 0;
+}
+.job-category-tab {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400; /* Non-active */
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #000b41a7; /* Example non-active color, you may use another if specified */
+  background: transparent;
+  transition: color 0.15s, font-weight 0.2s;
+  position: relative;
+  text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.job-category-tab.active {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: bold;
+  color: #000B41;
+}
+.job-categories-underline {
+  position: relative;
+  height: 6px;
+  background: transparent;
+  /* margin-bottom: 0.5rem; */
+}
+.job-categories-underline-active {
+  position: absolute;
+  bottom: 20.8px;
+  height: 6px;
+  background: #53BE90;
+  transition: left 0.3s, width 0.3s;
+}
+
+.job-listing-item {
+  margin-bottom: 0;
+}
+.job-listing-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000B41;
+  line-height: 1;
+}
+.job-listing-info {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000B41;
+  margin-bottom: 0;
+}
+.apply-now-btn {
+  background: #53BE90;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 111px;
+  height: 37px;
+  border: none;
+  transition: background 0.2s;
+}
+.apply-now-btn:hover, .apply-now-btn:focus { background: #3aa675; }
+
+.job-listing-divider {
+  border: 1px solid #00000096;
+  margin: 24px 0 0 0;
+}
+
+.job-search-input-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  height: 43px;
+  flex: 1 1 0;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+}
+.input-group-text {
+  background: #fff !important;
+  border: none !important;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 0 0 8px !important;
+  padding: 0 16px;
+}
+.job-search-input {
+  background: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 43px;
+  font-size: 20px;
+  color: #000B41;
+  border-radius: 0 8px 8px 0 !important;
+  padding-left: 0;
+}
+.job-search-location-icon {
+  color: #000B41;
+  font-size: 18px;
+}
+
+.career-benefits-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #000B41;
+}
+
+.career-benefit-card {
+  width: 100%;
+  max-width: 368px;
+  min-height: 131px;
+  border-radius: 10px;
+  border-left: 8px solid #000B41;
+  background: #53BE90;
+  backdrop-filter: blur(32.5px);
+  padding: 15px 15px 12px 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.career-benefit-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  /* line-height: 100%; */
+  margin-bottom: 8px;
+}
+
+.career-benefit-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  /* text-align: justify; */
+}
+
+@media (max-width: 991.98px) {
+  .career-benefit-card { max-width: 100%; }
+}
+
+
+/*  */
+
+
+.enquiry-image-wrapper {
+  max-width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.enquiry-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  display: block;
+  min-height: 350px;
+}
+.enquiry-form-card {
+  width: 100%;
+  max-width: 411px;
+  min-height: 460px;
+  background: #000B41;
+  border-radius: 32px;
+  border-image: linear-gradient(130.88deg, #4A3EC1 22.15%, #00DC9A 110.12%);
+  border-image-slice: 1;
+  backdrop-filter: blur(32.5px);
+  position: relative;
+  box-shadow: 0 0 32px rgba(74, 62, 193, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.enquiry-form-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+.enquiry-input, .enquiry-phone-input, .enquiry-phone-prefix, .form-select.enquiry-input {
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 0;
+  color: #000B41;
+}
+.enquiry-phone-prefix {
+  border-radius: 8px 0 0 8px;
+  background: #fff;
+  border: none;
+  color: #000B41;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  height: 43px;
+}
+.enquiry-phone-input {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+.enquiry-submit-btn {
+  height: 48px;
+  background: #15c690;
+  color: #fff;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  transition: background 0.2s;
+}
+.enquiry-submit-btn:hover,
+.enquiry-submit-btn:focus {
+  background: #00DC9A;
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .enquiry-form-card, .enquiry-image-wrapper {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .enquiry-section .row {
+    flex-direction: column !important;
+  }
+  .enquiry-image-wrapper, .enquiry-form-card {
+    margin-bottom: 2rem;
+    border-radius: 24px;
+  }
+  .enquiry-form-card {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .job-search-container { width: 100%; min-height: 56px; padding: 12px 10px; }
+  .job-search-btn { width: 110px; height: 36px; font-size: 14px; }
+  .job-category-tab { font-size: 16px; }
+  .job-listing-title { font-size: 22px; }
+  .job-listing-info { font-size: 14px; }
+}
+
+.enquiry-input,
+.enquiry-phone-input,
+.enquiry-phone-prefix,
+.form-select.enquiry-input {
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background: #fff;
+  border-radius: 8px !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+  color: #000B41;
+  box-shadow: none !important;
+  outline: none !important;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.enquiry-phone-group {
+  width: 100%;
+  display: flex;
+}
+.enquiry-phone-prefix {
+  background: #fff !important;
+  color: #000B41;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px 0 0 8px !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  min-width: 56px;
+  justify-content: center;
+  padding: 0;
+  height: 43px;
+}
+.enquiry-phone-input {
+  border-radius: 0 8px 8px 0 !important;
+  border-left: none !important;
+  margin-left: -1px;
+}
+.form-select.enquiry-input {
+  padding-right: 32px; /* for dropdown arrow */
+}
+.mb-2 {
+  margin-bottom: 12px !important;
+}
+.mb-3 {
+  margin-bottom: 18px !important;
+}
+.enquiry-submit-btn {
+  height: 48px;
+  background: #15c690;
+  color: #fff;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  transition: background 0.2s;
+  margin-top: 12px;
+}
+.enquiry-submit-btn:hover,
+.enquiry-submit-btn:focus {
+  background: #00DC9A;
+  color: #fff;
+}
+
+/* 1. Ensure parent row stretches children */
+.enquiry-section .row {
+  align-items: stretch !important;
+  display: flex !important; /* force flex if not already */
+}
+
+/* 2. Make both columns take full height */
+.enquiry-image-wrapper,
+.enquiry-form-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 3. Make the image fill its parent */
+.enquiry-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 1 1 auto;
+  min-height: 350px;
+  border-radius: 32px;
+  display: block;
+}
+
+/* 4. Remove extra min-heights if not needed, or sync min-height */
+.enquiry-form-card,
+.enquiry-image-wrapper {
+  min-height: 460px;
+}
+
+
+/* Responsive adjustment for mobile */
+@media (max-width: 991.98px) {
+  .enquiry-section .row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .enquiry-image-wrapper,
+  .enquiry-form-card {
+    min-height: unset;
+    height: auto;
+  }
+}
+
+/* Add this new wrapper for scroll */
+.job-categories-tabs-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+/* Hide scrollbar for webkit browsers (optional, for cleaner UI) */
+.job-categories-tabs-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Make sure tabs don't wrap on mobile/tablet */
+.job-categories-tabs {
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+  min-width: max-content;
+}
+
+/* Responsive: On mobile, allow horizontal scroll and tighter spacing */
+@media (max-width: 991.98px) {
+  .job-categories-tabs-scroll-wrapper {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .job-categories-tabs {
+    gap: 12px;
+  }
+  .job-category-tab {
+    min-width: 160px;
+    font-size: 18px;
+    margin-right: 0;
+    margin-left: 0;
+    /* Optional: reduce padding/margin */
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .job-categories-underline {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* XS Mobile: tighter tabs */
+@media (max-width: 576px) {
+  .job-category-tab {
+    min-width: 120px;
+    font-size: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+
+/* new */
+
+
+
+.career-header {
+
+  padding-top: 15px;
+ 
+  background: transparent;
+
+  
+}
+.career-title-custom {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.career-heading-green {
+  color: #00D796;
+}
+
+
+@media (max-width: 991.98px) {
+  .career-content-section {
+    border-radius: 22px;
+    margin-top: -20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .career-title-custom {
+    font-size: 32px;
+  }
+  .contact-form-card-v2 {
+    min-width: 0;
+    max-width: 100%;
+    padding: 28px 12px 18px 12px;
+    box-shadow: 0px 4px 28.6px 0px #00000040;
+  }
+}
+@media (max-width: 767.98px) {
+  .career-content-section {
+    border-radius: 13px;
+    margin-top: -10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .career-title-custom {
+    font-size: 34px;
+  }
+  .contact-map-form-section .row {
+    flex-direction: column;
+  }
+  .contact-form-card-v2 {
+    margin-top: 16px;
+    padding: 18px 6px 12px 6px;
+    box-shadow: 0px 4px 28.6px 0px #00000040;
+  }
+}
+
+@media (max-width: 575.98px) { 
+
+  .career-img-wrapper {
+    width: 100%;
+    max-width: 404px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    overflow: visible; /* allow badge to overflow */
+ 
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .career-img-badge-outside {
+    font-size: 23px;
+    padding: 8px 22px 8px 14px;
+    right: -10px;
+    bottom: 38px;
+  }
+
+  .job-openings-title {
+    font-size: 32px;
+
+  }
+  
+
+}

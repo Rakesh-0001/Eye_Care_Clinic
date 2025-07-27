@@ -1,8 +1,10 @@
 /* ----------- FOOTER GRADIENT ----------- */
 .eyecare-footer {
   color: #fff;
-  padding: 54px 0 24px 0;
+  padding: 70px 0 35px 0;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    /* background: linear-gradient(180deg, #050035 45.69%, #000B41 100%); */
+    /* background-color: #070142; */
 }
 .eyecare-footer-logo {
   display: flex;
@@ -48,10 +50,17 @@
   color: #181b46;
 }
 .eyecare-footer-title {
-  font-size: 1.12rem;
-  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
   color: #fff;
   margin-bottom: 16px;
+  font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-style: Bold;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
 .eyecare-footer-list {
   list-style: none;
@@ -64,8 +73,10 @@
 .footer-link {
   color: #e0e4ff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
   transition: color 0.15s;
+
 }
 .footer-link:hover {
   color: #18ff72;
@@ -94,7 +105,7 @@
     border-bottom-right-radius: 28px;
   }
   .eyecare-footer-logo {
-    justify-content: center;
+    justify-content: start;
   }
 }
 @media (max-width: 767.98px) {
@@ -107,6 +118,7 @@
     margin-bottom: 10px;
   }
   .eyecare-footer-logo {
+    justify-content: start;
     flex-direction: column;
     gap: 4px;
   }
