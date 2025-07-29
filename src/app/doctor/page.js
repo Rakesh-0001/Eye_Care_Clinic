@@ -199,21 +199,21 @@ export default function doctor() {
 
         <div className="container mx-auto mb-4 py-1 py-md-4 mt-0 mt-md-2">
           {doctorRows.map((row, rowIdx) => (
-            <div className="doctor-list-row mb-3" key={rowIdx}>
+            <div className="doctor-list-row  mb-3" key={rowIdx}>
               {row.map((doc) => (
                 <div
                   key={doc.id}
-                  className={`doctor-card-col${
+                  className={`doctor-cards-cols ${
                     selected?.id === doc.id ? " expanded" : ""
                   }`}
                 >
                   {selected?.id === doc.id ? (
-                    <div className="doctor-card doctor-card-row d-flex flex-row">
-                      <div className="doctor-card-image">
+                    <div className="doctor-cards doctor-card-row d-flex flex-row">
+                      <div className="doctor-cards-image">
                         <img
                           src={doc.image}
                           alt={doc.name}
-                          className="Doctors-img"
+                          className="Doctors-imgs"
                         />
                         <div className="arrow-box">
                           <button
@@ -245,7 +245,7 @@ export default function doctor() {
                       </div>
                     </div>
                   ) : (
-                    <div className="doctor-card">
+                    <div className="doctor-cards">
                       <img
                         src={doc.image}
                         alt={doc.name}

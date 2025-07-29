@@ -1,0 +1,155 @@
+.teleophthalmology-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+
+  
+  .teleophthalmology-content {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+  }
+  
+  .teleophthalmology-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+  }
+  
+  .teleophthalmology-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 1300px) {
+    .teleophthalmology-bg { width: 100%; }
+    .teleophthalmology-overlay { width: 100%; }
+  }
+  @media (max-width: 900px) {
+    .teleophthalmology-bg { height: 260px; }
+    .teleophthalmology-overlay { height: 90vw; min-height: 160px; }
+    .teleophthalmology-title { font-size: 18px; }
+    .teleophthalmology-desc { font-size: 11px; }
+  }
+
+
+  .teleophthalmology-bg {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 2.6 / 1;
+    border-radius: 32px;
+    overflow: hidden;
+    background-image: url("/assets/Images/eye-camp-background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .teleophthalmology-overlay {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    width: 94%;
+    max-width: 100%;
+    background: #2E2D7961;
+    border-radius: 28px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(26.8px);
+    -webkit-backdrop-filter: blur(26.8px);
+    box-shadow: 0 2px 24px 0 rgba(46,45,121,0.08);
+    padding: 32px 32px;
+
+
+  }
+  
+  .teleophthalmology-content,
+  .teleophthalmology-title,
+  .teleophthalmology-desc {
+    text-align: left;
+  }
+
+
+  .clinic-images-section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+  
+  .clinic-row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+  }
+  
+  .clinic-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .clinic-img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    background: #F2F2F2;
+  }
+  
+  /* Specific sizes for each image (desktop) */
+  .clinic-img-large {  /* Left top */
+    width: 346px;
+    height: 378px;
+  }
+  
+  .clinic-img-small {  /* Left bottom */
+    width: 346px;
+    height: 139px;
+  }
+  
+  .clinic-img-tall {   /* Center right */
+    width: 489px;
+    height: 545px;
+  }
+  
+  .clinic-img-vertical {  /* Far right */
+    width: 240px;
+    height: 538px;
+  }
+  
+  /* Responsive adjustments for tablets and below */
+  @media (max-width: 1200px) {
+    .clinic-img-large, .clinic-img-small, .clinic-img-tall, .clinic-img-vertical {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 350px;
+    }
+    .clinic-row {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .clinic-col {
+      gap: 8px;
+    }
+  }

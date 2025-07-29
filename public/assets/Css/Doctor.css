@@ -58,7 +58,7 @@
   color: #151515;
 }
 
-.doctor-card {
+.doctor-cards {
   position: relative;
   border-radius: 22px;
   background: #F6F6FB;
@@ -68,7 +68,7 @@
   transition: box-shadow 0.3s;
 }
 
-.doctor-card.active {
+.doctor-cards.active {
   background: #D9F1E9;
   box-shadow: 0 12px 32px rgba(0,0,0,0.16);
 }
@@ -164,21 +164,9 @@
 
 
 
-.doctor-card-col {
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 270px;
-  max-width: 270px;
-  flex: 0 0 320px;
-}
 
-.doctor-card-col.expanded {
-  min-width: 400px;
-  max-width: 400px;
-  flex: 0 0 641px;
-  /* z-index: 1; */
-}
 
-.doctor-card {
+.doctor-cards {
   background: #f6f6fb;
   border-radius: 22px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
@@ -233,7 +221,7 @@
   /* justify-content: center; */
 }
 
-.doctor-card-col {
+.doctor-card-cols {
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 270px;
   max-width: 270px;
@@ -241,13 +229,13 @@
   display: flex;
 }
 
-.doctor-card-col.expanded {
+.doctor-cards-cols.expanded {
   min-width: 520px;
   max-width: 520px;
   flex: 0 0 520px;
 }
 
-.doctor-card {
+.doctor-cards {
   position: relative;
   border-radius: 32px;
   background: #F6F6FB;
@@ -260,7 +248,7 @@
   align-items: stretch;
   justify-content: flex-start;
 }
-.doctor-card-expanded {
+.doctor-cards-expanded {
   display: flex;
   flex-direction: row;
   background: none;
@@ -269,7 +257,7 @@
   align-items: stretch;
   position: relative;
 }
-.doctor-card-image {
+.doctor-cards-image {
   width: 270px;
   height: 380px;
   border-radius: 22px;
@@ -356,11 +344,11 @@
 
 
 /* Collapsed card adjustments */
-.doctor-card:not(.doctor-card-expanded) .arrow-btn {
+.doctor-cards:not(.expanded) .arrow-btn {
   right: 22px;
   bottom: 22px;
 }
-.doctor-card:not(.doctor-card-expanded) .Doctors-img {
+.doctor-cards:not(.expanded) .Doctors-img {
   border-radius: 22px;
 }
 .arrow-box{
@@ -383,8 +371,8 @@ background-color: #2E2D79;
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .doctor-card-col,
-  .doctor-card-col.expanded {
+  .doctor-card-cols,
+  .doctor-card-cols.expanded {
     min-width: 320px;
     max-width: 320px;
     flex: 0 0 320px;
@@ -409,8 +397,8 @@ background-color: #2E2D79;
     flex-direction: column;
     gap: 20px;
   }
-  .doctor-card-col,
-  .doctor-card-col.expanded {
+  .doctor-card-cols,
+  .doctor-card-cols.expanded {
     min-width: 100%;
     max-width: 100%;
     flex: 1 1 100%;
@@ -656,8 +644,8 @@ background-color: #2E2D79;
     gap: 16px;
     justify-content: flex-start;
   }
-  .doctor-card-col,
-  .doctor-card-col.expanded {
+  .doctor-card-cols,
+  .doctor-card-cols.expanded {
     min-width: 220px;
     max-width: 220px;
     flex: 0 0 220px;
@@ -693,8 +681,8 @@ background-color: #2E2D79;
     gap: 24px;
     align-items: center;
   }
-  .doctor-card-col,
-  .doctor-card-col.expanded {
+  .doctor-card-cols,
+  .doctor-card-cols.expanded {
     min-width: 90%;
     max-width: 90%;
     flex: 1 1 90%;
@@ -753,8 +741,8 @@ background-color: #2E2D79;
     flex-direction: column;
     gap: 16px;
   }
-  .doctor-card-col,
-  .doctor-card-col.expanded {
+  .doctor-card-cols,
+  .doctor-card-cols.expanded {
     min-width: 100%;
     max-width: 100%;
     flex: 1 1 100%;
